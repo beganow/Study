@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <block>
+      <title>Большой выбор</title>
+      <description>Огромный выбор марок и типов автомобилей.</description>
+      <img> IMG/icons/iconFirst.svg</img>
+      <class> </class>
+   </block>
+   <block>
+      <title>Надежность</title>
+      <description>Наши автомобили проходят качественную подготовку к эксплуатации.</description>
+      <img> IMG/icons/iconTwo.svg</img>
+      <class>two</class>
+   </block>
+   <block>
+      <title>Доверие</title>
+      <description>Мы более 10 лет на рынке.</description>
+      <img> IMG/icons/iconThree.svg</img>
+      <class>tree</class>
+   </block>
+</root>

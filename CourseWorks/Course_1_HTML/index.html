@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/home.css">
+      <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+  <link rel="icon" type="image/png" sizes="16x16" href="IMG/logo.svg" />
+  <title>LuxAv</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header_items"> <a href="index.html">
+          <div class="logo">
+            <img src="IMG/logo.svg" alt="logo">
+            <p>LuxAv</p>
+          </div>
+        </a>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="index.html" class="active">Главная </a>
+            </li>
+            <li>
+              <a href="HTML/Catalog.html">Каталог </a>
+            </li>
+            <li>
+              <a href="HTML/Service.html">Сервис </a>
+            </li>
+            <li>
+              <a href="HTML/History.html">История создания</a>
+            </li>
+                    <li class="mobile">
+                     <img src="IMG/phone.svg" alt="phone" class="phone">
+               <p> Контакты</p>
+                 <div class="hidden_menu">
+                    <div class="blocks">
+                           <ul>
+                   <li>
+                         Life: +375 29 654-54-54 
+                      </li>
+                        <li>
+                           МТС: +375 29 654-54-54
+                        </li>
+                        <li>
+                           А1: +375 29 654-54-54
+                        </li>
+                   </ul>
+                     <div class="icons">
+                           <a href="https://www.instagram.com/">
+                              <img src="IMG/icons/insta.svg" alt="instagram">
+                           </a>
+                           <a href="https://vk.com/feed">
+                              <img src="IMG/icons/VK.svg" alt="vk">
+                           </a>
+                           <a href="https://www.facebook.com/">
+                           <img src="IMG/icons/Facebook.svg" alt="facebook">
+                  </a>
+                        </div>
+                    </div> 
+                 </div>
+               </li>
+            <li>
+              <a href="HTML/Contact.html">Как нас найти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="burger">
+          <div class="containers">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <h1 class="title">
+          Приобретайте лучшие автомобили у нас
+        </h1>
+        <p class="description">
+          Официальный сайт нашего магазина
+        </p>
+      </div>
+   <main class="main_slider">
+      <div class="wrapper">
+        <div class="container">
+          <div class="slides">
+            <div class="slide">
+            
+              <img
+                src="IMG/Cars/car_two/carFive.svg"
+                alt="car"
+              />
+          
+            </div>
+            <div class="slide">
+              <img
+                src="IMG/Cars/car_two/carThreten.svg"
+                alt="car"
+              />
+            
+            </div>
+            <div class="slide">
+              <img
+                src="IMG/Cars/car_two/Porsche2.svg"
+                alt="Porsche"
+              />
+           
+            </div>
+             <div class="slide">
+              <img
+                src="IMG/Cars/car_two/VolkswagenTwo.svg"
+                alt="Porsche"
+              />
+         
+            </div>
+    
+          </div>
+          <div class="slide-controls">
+            <button id="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    </div>
+  </header>
+ <main class="main">
+    <div class="wrapper">
+      <h1 class="title_main">
+        Почему выбирают именно нас?
+      </h1>
+      <div class="opportunites">
+         <!--<div class="oppor">
+          <div class="block">
+            <img src="IMG/icons/iconFirst.svg" alt="icon">
+          </div>
+          <div class="text">
+            <h1 class="title_text">
+              Большой выбор
+            </h1>
+            <p>Огромный выбор марок и типов автомобилей.</p>
+          </div>
+        </div>
+        <div class="oppor">
+          <div class="block two">
+            <img src="IMG/icons/iconTwo.svg" alt="icon">
+          </div>
+          <div class="text">
+            <h1 class="title_text">
+            Надежность
+            </h1>
+            <p>Наши автомобили проходят качественную подготовку к эксплуатации.</p>
+          </div>
+        </div>
+        <div class="oppor">
+          <div class="block tree">
+            <img src="IMG/icons/iconThree.svg" alt="icon">
+          </div>
+          <div class="text">
+            <h1 class="title_text">
+             Доверие
+            </h1>
+            <p>Мы более 10 лет на рынке.</p>
+          </div>
+        </div>!--> 
+      </div>
+    </div>
+    </div>
+  </main>
+  <script src="JS/slider.js"></script>
+  <script src="JS/main.js"></script>
+  <script>
+    var xmlhttp = new XMLHttpRequest();
+   var path = "XML/data.xml";
+   xmlhttp.open("GET", path, true);
+   xmlhttp.send();
+   xmlhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+         var xmlDoc = this.responseXML;
+         var x = xmlDoc.getElementsByTagName("block");
+         console.log(x);
+         for (i = 0; i < x.length; i++) {
+          
+            let title = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            let description = x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue;
+            let img = x[i].getElementsByTagName("img")[0].childNodes[0].nodeValue;
+            let className = x[i].getElementsByTagName("class")[0].childNodes[0].nodeValue;
+            var div = `
+           <div class="oppor">
+          <div class="block ${className}"}>
+            <img src=${img} alt="icon">
+          </div>
+          <div class="text">
+            <h1 class="title_text">
+             ${title}
+            </h1>
+            <p>${description}</p>
+          </div>
+        </div>`
+            document.querySelector(".opportunites").innerHTML += div;
+         }
+      }
+   }
+  </script>
+</body>
+
+</html>
