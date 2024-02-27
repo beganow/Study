@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Лабораторная 7</title>
+        <style>
+            textarea{
+                font-weight: bold;
+                height: 50px;
+                width: 150px;
+            }
+            fieldset{
+                width: 450px;
+                margin: auto;
+            }
+            .send34{
+                margin:auto;
+                margin-left: 200px;
+                color: blue;
+                background-color: coral;
+            }
+            .info23{
+                color:red;
+                background-color: cornflowerblue;
+            }
+            .surname12:hover{
+                background-color: green;
+            }
+            .name12:hover{
+                color:purple;
+            }
+        </style>
+        <script src='lab7.js'></script>
+    </head>
+    <body>
+        <form>
+        <fieldset>
+        <textarea>Факультет информационных технологий</textarea><br />
+        <br />
+        <input type='text' value="Фамилия"><br />
+        <input type='text' value="Имя">
+        <br /><br /><strong>
+        Специальность</strong><select>
+        <option>ИСИТ</option>
+        <option>ПОИТ</option>
+        <option>ПОИБМС</option>
+        <option>ДЭВИ</option>
+        </select><br />
+       <br/><strong> Курс</strong>
+        <br /><input type='radio' name='s' value='1' /> 1 
+        <input type='radio' name='s' value='2' /> 2 
+        <input type='radio' name='s' value='3' /> 3 
+        <input type='radio' name='s' value='4' /> 4 
+        <br/><br /><strong> Предметы</strong>
+        <br />
+        <input class='pred' type='checkbox' name='space' value='ОИТ' /> ОИТ 
+        <input class='tete' type='checkbox' name='space' value='ОАП' /> ОАП
+        <input class='tete' type='checkbox' name='space' value='История' /> История
+        <input class='tete' type='checkbox' name='space' value='Физика' /> Физика
+        <input class='tete' type='checkbox' name='space' value='Математика' /> Математика
+        <br />
+        <br />
+        <input type="submit" value="submit"/>
+        <input type="submit" value="reset"/>
+        <br />
+        <br />
+        <input type="submit" value="Напечатать" onclick="writing1()"/>
+        </fieldset>
+       </form>
+       <form>
+           <fieldset>
+               <legend>Знакомство с Вами</legend>
+               <input class='name12' type='text' value="Как вас зовут?"/><br/><br/>
+               <input  class='surname12' type='text' value="Назовите вашу фамилию"><br/><br/>
+               <input type='text' value="Домашний адрес"><br/><br/>
+               <input type='text' value="Мобильный телефон"><br/><br/>
+               <textarea class='info23'>Дайте небольшое описание своего характера и занятий</textarea><br/> <br/>
+                Пол<select>
+                    <option>Мужской</option>
+                    <option>Женский</option>
+                </select>
+                <br/><br/>Кем бы выхотели стать?<br/>
+                <input type='checkbox' name='prof' value='1b'>Программист<br/>
+                <input type='checkbox'  name='prof' value='2b'>Механик<br/>
+                <input type='checkbox'  name='prof' value='3b'>Садовод<br/>
+                <input type='checkbox'  name='prof' value='4b'>Лесник<br/>
+                <input type='checkbox'  name='prof' value='5b'><textarea>Другое</textarea>
+                <br/>
+                <input class='send34' type='button' name='send1' value="Отправить" onclick="fun1()">
+           </fieldset>
+       </form>
+    </body>
+</html>

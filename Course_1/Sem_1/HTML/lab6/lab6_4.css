@@ -1,0 +1,11 @@
+.p1{
+    height: 100px;
+    width: 100px;
+    
+}
+figure,img{
+    display:inline-block;    
+}
+fixcaption{
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 4</title>
+	<style>
+		table {
+            border-collapse: collapse;
+            text-align: center;
+            background-color: green;
+            width: 200px;
+            height: 300px;
+        }
+        td {
+            border: 2px black solid;
+        }
+        td:first-child {
+            background-color: blue;
+        }
+	</style>
+	<script>
+		var x = new Date();
+		document.write("<table><tr><td>Год</td><td>" + x.getFullYear() + "</td></tr><tr><td>Месяц</td><td>" + x.getMonth() + "</td></tr><tr><td>День</td><td>" + x.getDate() + "</td></tr><tr><td>Час</td><td>" + x.getHours() + "</td></tr><tr><td>Минуты</td><td>" + x.getMinutes() + "</td></tr><tr><td>Секунды</td><td>" + x.getSeconds() +"</table>");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

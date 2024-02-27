@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+  <style>
+    #myImg{
+      height: 100px;
+    }
+    body{
+      background-color: aqua;
+    }
+  </style>
+</head>
+  <meta charset="UTF-8">
+<body >
+  <img src="sakura.jpg">
+  <img src="listsac.png" id="myImg" style="position:absolute; top:30; left:30;width: 190px;"></img>
+</body>
+<script>
+  let idImg = document.getElementById("myImg");
+  setInterval("moveR()", 40);
+  function moveR() {
+    console.log(idImg.style.left);
+    if (parseInt(idImg.style.left) < 900 && parseInt(idImg.style.left) < 600) { //parseint преобразует аргумент в строковый тип интепритирует и возвращает целое значение
+      idImg.style.left = parseInt(idImg.style.left) + Math.floor(Math.random() * 10)+"px"; //метод floor() объекта Math вычисляет и возвращает наибольшее целое число, которое меньше или равно переданному числу (округляет число вниз).
+      idImg.style.top = parseInt(idImg.style.top) + Math.floor(Math.random() * 10)+ "px";
+
+    }
+    else {
+      idImg.style.left = 30+"px";
+      idImg.style.top = 30+"px";
+    }
+  }
+</script>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type='text/javascript'>
+        function fun1() {
+            let x = +prompt("введите любое число число");
+            if (((x < 20) || (x > 40)) && ((x != 15) && (x % 5 == 0)))
+                alert('Правильное значение')
+            else
+                alert('Не правильное значение')
+        }
+    </script>
+</head>
+
+<body>
+    <input type='button' value='Введите число' onclick='fun1()' />
+</body>
+
+</html>

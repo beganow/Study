@@ -1,0 +1,43 @@
+.grid{
+    margin-left: 100px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "a a a"
+    "b c g";
+    text-align: center;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 430px 430px 430px;
+}
+.div1{
+    background-color: aqua;
+    border: 2px solid black;
+}
+.div2{
+    background-color: blueviolet;
+    border: 2px solid black;
+}
+.grid2{
+    margin-top: 5px;
+    margin-left: 100px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "a b c d e g"
+    "a b c d e g"
+    "a b c d f g"
+    "a b c d f g";
+    grid-template-columns: 30px 290px 295px 295px 295px 30px;
+    grid-template-rows: 60px 60px 60px 60px;
+    justify-self: center;
+    text-align: center;
+    overflow: hidden;
+    word-break: break-all;
+}
+.grid2 > div{
+    border: 2px solid black;
+}
+.div3{
+    position: relative;
+    left: 15px;
+}

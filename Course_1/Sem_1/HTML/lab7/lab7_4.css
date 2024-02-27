@@ -1,0 +1,63 @@
+@keyframes slide {
+    from{
+        opacity: 0;
+        filter: grayscale(100%);
+    }
+    5%{
+        opacity: 1;
+        filter: grayscale(50%);
+    }
+    10%{
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+    15%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+}
+img{
+    width: 1400px;
+    height: 1000px;
+    display: inline;
+    animation: slide 25s linear infinite;
+    opacity: 0;
+    position:absolute;
+    border: 5px dashed blueviolet;
+    margin: 0px;
+}
+.img1{
+    animation-delay: 5s;
+}
+.img2{
+    animation-delay: 10s;
+}
+.img3{
+    animation-delay: 15s;
+}
+.img4{
+    animation-delay: 20s;
+}
+.img5{
+    animation-delay: 25s;
+}
+@keyframes h{
+    from{
+        opacity: 80%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
+.h{
+    animation-name: h;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    text-align: center;
+}

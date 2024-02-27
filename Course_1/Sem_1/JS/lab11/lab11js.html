@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="jquery.js"></script>
+        <script src="https://dir.by/example_lib/jquery/jquery-3.3.1.min.js"></script>
+        <script src="https://dir.by/example_lib/jquery_ui/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <style>
+            img{
+                width: 600px;
+                height: 300px;
+            }
+            #pic2{
+                width: 100px;
+                height: 100px;
+            }
+            #draggable{
+                width: 100px;
+            height: 100px;
+            margin-left: 50px;
+            }
+            #node{
+                width: 100px;
+                height: 100px;
+                margin-top: 50px; /* внешний отступ от верхнего края элемента */	
+                position: absolute; /* абсолютное позиционирование элемента */
+            }
+            h1{
+                color: purple;
+            }
+            #block{
+                width: 100px;
+                height: 100px;
+                margin: 150px;
+            }
+            h2{
+                margin-top: 300px;
+                font-size: 36px;
+                color:tomato;
+            }
+
+        </style>
+        <title>Лаборатоная 11</title>
+    </head>
+    <body>
+        <div>
+        <p id='writl12'>Классическая, или ньютоновская механика, благодаря которой  существуют современные механизмы, немыслима без законов Ньютона. 
+            В 1687 году<span id='myColor'>  Исаак Ньютон</span>  издал книгу «<span id='font'>Математические</span> начала натуральной философии». 
+            В ней английский ученый описал три закона движения и закон всемирного тяготения, определил основные физические термины, в том числе, массу и силу, изложил результаты своих исследований в области гидродинамики и астрономии.</p>
+        </div>
+        <figure>
+            <img id='pic1' src='learn.jpg'>
+        </figure>
+        <div>
+            <p id='dropw'>jQuery—набор функций JavaScript, фокусирующийся на взаимодействии JavaScript и HTML.
+                Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими.
+             Также библиотека jQuery предоставляет удобный API для работы с AJAX. Разработка jQuery ведётся командой добровольцев на пожертвования.</p>
+        </div>
+        <figure>
+            <img id='pic2' src='pic2.jpg'>
+        </figure>
+        
+        <div >
+            <img  src="ball.jpg" id='draggable'>
+        </div>
+        <h1><center>Движение по прямой</center></h1>
+        <figure>
+            <img src="nodejs.png" id="node">
+        </figure>
+        
+        <div>
+            <h2><center>Движение по кривой</center></h2>
+            <img src="circle.jpg" id='block'>
+        </div>
+    <script src="lab11js.js"> </script>
+    </body>
+</html>

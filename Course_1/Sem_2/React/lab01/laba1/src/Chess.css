@@ -1,0 +1,16 @@
+.box { text-align: center; }
+.centered { display: inline-block; margin: 0; }
+.chess-board { border-spacing: 0; border-collapse: collapse;border-width: 0px; }
+.chess-board td { width: 5em; height: 5em;  vertical-align: middle; }
+.chess-board tr:nth-child(odd) td:nth-child(odd) {
+background: rgb(255, 174, 0);
+}
+.chess-board tr:nth-child(even) td:nth-child(even) {
+background: rgb(255, 174, 0);
+}
+.chess-board tr:nth-child(odd) td:nth-child(even) {
+    background: brown;
+    }
+    .chess-board tr:nth-child(even) td:nth-child(odd) {
+    background: brown;
+    }

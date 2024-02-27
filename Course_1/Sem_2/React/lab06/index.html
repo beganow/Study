@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ЛАБОРАТОРНЫЕ РАБОТЫ &#124; REACT.JS</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+        <link rel="stylesheet" href="../../css/general.css">
+        <!--React.js-->
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script src="../../libraries/prism.js"></script>
+        <!--jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="../../libraries/header.js"></script>
+    </head>
+</head>
+
+<body>
+    <section class="nav-bar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html"><img src="../../images/react-logo.png">Лабораторные работы</a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="../../index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="../../labs.html">Лабораторные работы</a>
+                    </li>
+                    <li>
+                        <a href="../../theory.html">Теория</a>
+                    </li>
+                    <li>
+                        <a href="../../info.html">Справочник</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="general">
+
+        <div class="content">
+            <p class="section">Лабораторная работа №6</p>
+            <p class="lr-info">Темы: <a target="_blank" href="../../examples/advanced/render-props/index.html">Props'ы рендера</a><br>
+            Время выполнения: 2 часа</p>
+            <p class="section">Задание 1</p>
+            <p>Создайте компонент <mark>StudentInfo</mark> для получения данных о студенте и последующего использования их в других компонентах.</p>
+            <p>Компонент <mark>StudentInfo</mark> должен содержать следующие поля:</p>
+            <ul>
+                <li>ФИО студента;</li>
+                <li>дата рождения;</li>
+                <li>год поступления в университет;</li>
+                <li>факультет;</li>
+                <li>группа;</li>
+                <li>специальность;</li>
+                <li>электронная почта;</li>
+                <li>номер телефона.</li>
+            </ul>
+            <p>Создайте компонент <mark>StudentInfoHandler</mark> для обработки и вывода полученной в компоненте <mark>StudentInfo</mark> информации. В ходе обработки информации получите следующие дополнительные данные:</p>
+            <ul>
+                <li>текущий возраст студента;</li>
+                <li>курс студента (выводить «Окончил университет» при значении большем четырех);</li>
+                <li>оператор услуг электронной почты;</li>
+                <p>пример: для info@mail.ru оператором является mail.ru</p>
+                <li>оператор услуг мобильной связи.</li>
+            </ul>
+            <p>Для определения оператора воспользуйтесь данными таблицы ниже.</p>
+            <table>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 175.2px !important; height: 24px !important; transform: none !important; transform-origin: 87.6px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 175px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">Оператор
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 224.8px !important; height: 24px !important; transform: none !important; transform-origin: 112.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 224.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">Код
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">Номера телефонов
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="5">
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 175.2px !important; height: 24.8px !important; transform: none !important; transform-origin: 87.6px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 175px !important; height: 24.8px !important;"><canvas width="60" height="21" style="display: none; top: 2px !important; left: 33px !important;"></canvas></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">A1 (Velcom)</span>
+                    </td>
+                    <td rowspan="4">
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 224.8px !important; height: 24px !important; transform: none !important; transform-origin: 112.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 224.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">+375 29 или 8029
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">1xx-xx-xx
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">3xx-xx-xx
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">6xx-xx-xx
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">9xx-xx-xx
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 224.8px !important; height: 24px !important; transform: none !important; transform-origin: 112.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 224.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">+375 44 или 8044
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">Все номера
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="5">
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 175.2px !important; height: 24.8px !important; transform: none !important; transform-origin: 87.6px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 175px !important; height: 24.8px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">МТС</span>
+                    </td>
+                    <td rowspan="4">
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 224.8px !important; height: 24px !important; transform: none !important; transform-origin: 112.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 224.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">+375 29 или 8029
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">2xx-xx-xx
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">5xx-xx-xx
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">7xx-xx-xx
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">8xx-xx-xx
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 224.8px !important; height: 24px !important; transform: none !important; transform-origin: 112.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 224.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">+375 33 или 8033
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">Все номера
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 175.2px !important; height: 24.8px !important; transform: none !important; transform-origin: 87.6px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 175px !important; height: 24.8px !important;"><canvas width="23" height="20" style="display: none; top: 3px !important; left: 0px !important;"></canvas></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">life<span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">:)</span>
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 224.8px !important; height: 24px !important; transform: none !important; transform-origin: 112.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 224.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">+375 25 или 8025
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">Все номера
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 175.2px !important; height: 48px !important; transform: none !important; transform-origin: 87.6px 24px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 175px !important; height: 48px !important;"><canvas width="92" height="21" style="display: none; top: 2px !important; left: 0px !important;"></canvas></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">Белтелеком<div>(городской)
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 224.8px !important; height: 24px !important; transform: none !important; transform-origin: 112.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 224.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">+375 17 или 8017
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 248.8px !important; height: 24px !important; transform: none !important; transform-origin: 124.4px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 248.8px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">Все номера
+                    </td>
+                </tr>
+            </table>
+            <p>При вызове компонента <mark>StudentInfoHandler</mark> должна отображаться таблица следующего вида:</p>
+            <table>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 416px !important; height: 24.8px !important; transform: none !important; transform-origin: 208px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 416px !important; height: 24.8px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">фио</span><br>
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 249.6px !important; height: 24px !important; transform: none !important; transform-origin: 124.8px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 249.6px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">иванов иван иванович
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 416px !important; height: 24.8px !important; transform: none !important; transform-origin: 208px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 416px !important; height: 24.8px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">текущий возраст студента</span>
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 249.6px !important; height: 24px !important; transform: none !important; transform-origin: 124.8px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 249.6px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">20 лет
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 416px !important; height: 24.8px !important; transform: none !important; transform-origin: 208px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 416px !important; height: 24.8px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">факультет, курс, группа</span>
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 249.6px !important; height: 24px !important; transform: none !important; transform-origin: 124.8px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 249.6px !important; height: 24px !important;"><canvas width="34" height="21" style="display: none; top: 2px !important; left: 0px !important;"></canvas></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">фит, 3, 7
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 416px !important; height: 24px !important; transform: none !important; transform-origin: 208px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 416px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">специальность
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 249.6px !important; height: 24px !important; transform: none !important; transform-origin: 124.8px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 249.6px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">поит
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 416px !important; height: 24.8px !important; transform: none !important; transform-origin: 208px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 416px !important; height: 24.8px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">электронная почта</span>
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 249.6px !important; height: 24px !important; transform: none !important; transform-origin: 124.8px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 249.6px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">ivanov@gmail.com
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 416px !important; height: 24.8px !important; transform: none !important; transform-origin: 208px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 416px !important; height: 24.8px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">оператор услуг электронной почты</span>
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 249.6px !important; height: 24px !important; transform: none !important; transform-origin: 124.8px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 249.6px !important; height: 24px !important;"><canvas width="40" height="21" style="display: none; top: 2px !important; left: 0px !important;"></canvas></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">gmail.com
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 416px !important; height: 24.8px !important; transform: none !important; transform-origin: 208px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 416px !important; height: 24.8px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">номер телефона</span>
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 249.6px !important; height: 24px !important; transform: none !important; transform-origin: 124.8px 12px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 249.6px !important; height: 24px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false">+375441234567
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 416px !important; height: 24.8px !important; transform: none !important; transform-origin: 208px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 416px !important; height: 24.8px !important;"></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">оператора услуг мобильной связи</span>
+                    </td>
+                    <td>
+                        <lt-highlighter contenteditable="false" style="display: none;">
+                            <lt-div spellcheck="false" style="width: 249.6px !important; height: 24.8px !important; transform: none !important; transform-origin: 124.8px 12.4px !important; zoom: 1 !important;">
+                                <lt-div style="top: 0px !important; left: 0px !important; width: 249.6px !important; height: 24.8px !important;"><canvas width="60" height="21" style="display: none; top: 2px !important; left: 37px !important;"></canvas></lt-div>
+                            </lt-div>
+                        </lt-highlighter>
+                        <div contenteditable="true" spellcheck="false" data-gramm="false"><span style="color: rgb(0, 0, 0); font-family: verdana, arial, helvetica, sans-serif;">a1 (velcom)</span>
+                    </td>
+                </tr>
+            </table>
+            <p>Продемонстрируйте работу компонента <mark>StudentInfoHandler</mark> на странице после ввода данных и во внешнем окне.</p>
+            <p class="section">Задание 2</p>
+            <p>Разработайте компонент <mark>Notes</mark> для создания заметок. Компонент <mark>Notes</mark> должен содержать поля для ввода <span class="gatsby-code-text">заголовка заметки</span>, <span class="gatsby-code-text">даты заметки</span>, <span class="gatsby-code-text">текстовую область</span> для ввода текста заметки и <span class="gatsby-code-text">кнопку «Добавить заметку»</span>. После нажатия на кнопку ниже полей ввода должна появится заметка следующего вида:</p>
+            <p>Заголовок заметки<br>Дата заметки<br>Текст заметки</p>
+            <p>При этом поля формы должны быть очищены.</p>
+            <p>Для компонента <mark>Notes</mark> реализовать следующий функционал: добавления неопределенного количества заметок, появление кнопок «Удалить первую заметку» и «Удалить последнюю заметку» при количестве заметок большем трех.</p>
+            <p><span class="gatsby-code-text">Цвет фона всех заметок должен быть желтым.</span> Начиная с восьмой заметки выдавать сообщение «У вас слишком много заметок» над заголовком заметки и изменить цвет фона следующих заметок на красный.</p>
+            <p>Стили для формы добавления заметок, как и для самих заметок подберите индивидуально.</p>
+        </div>
+        <div class="site-nav">
+            <div class="site-nav-scroll">
+                <ul class="site-nav-list">
+                    <p class="site-nav-name">Раздел 1. Установка и введение в React</p>
+                    <li><a href="../lab01/index.html">Лабораторная работа №1</a></li>
+                    <li><a href="../lab02/index.html">Лабораторная работа №2</a></li>
+                    <li><a href="../lab03/index.html">Лабораторная работа №3</a></li>
+                    <li><a href="../lab04/index.html">Лабораторная работа №4</a></li>
+                    <li><a href="../lab05/index.html">Лабораторная работа №5</a></li>
+                    <p class="site-nav-name">Раздел 2. Основы React</p>
+                    <li><a href="index.html">Лабораторная работа №6</a></li>
+                    <li><a href="../lab07/index.html">Лабораторная работа №7</a></li>
+                    <li><a href="../lab08/index.html">Лабораторная работа №8</a></li>
+                    <li><a href="../lab09/index.html">Лабораторная работа №9</a></li>
+                    <li><a href="../lab10/index.html">Лабораторная работа №10</a></li>
+                    <p class="site-nav-name">Раздел 3. Redux.js</p>
+                    <li><a href="../lab11/index.html">Лабораторная работа №11</a></li>
+                    <li><a href="../lab12/index.html">Лабораторная работа №12</a></li>
+                    <li><a href="../lab13/index.html">Лабораторная работа №13</a></li>
+                    <li><a href="../lab14/index.html">Лабораторная работа №14</a></li>
+                    <li><a href="../lab15/index.html">Лабораторная работа №15</a></li>
+
+                </ul>
+                <script type="text/babel" src="../../libraries/navigator.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.site-nav-list a[href="index.html"]').parent().toggleClass('site-nav-list-active');
+                    });
+
+                    function handleResize() {
+                        if ($(document.body).width() < 799) {
+                            $('.site-nav-scroll')
+                                .css('height', $('.site-nav-list').height() + 40)
+                                .css('overflow-y', 'hidden');
+                        } else {
+                            $('.site-nav-scroll').css('height', '');
+                            $('.site-nav-scroll').height($('.content').height());
+                            if ($('.site-nav-list').outerHeight() > $('.site-nav-scroll').innerHeight()) {
+                                $('.site-nav-scroll').css('overflow-y', 'scroll');
+                            } else {
+                                $('.site-nav-scroll').css('overflow-y', 'hidden');
+                            }
+                        }
+                    }
+                    $(function() {
+                        document.body.onresize = handleResize;
+                        handleResize();
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛАБОРАТОРНЫЕ РАБОТЫ &#124; REACT.JS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../css/general.css">
+    <!--React.js-->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script src="../../libraries/prism.js"></script>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../../libraries/header.js"></script>
+</head>
+</head>
+
+<body>
+    <section class="nav-bar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html"><img src="../../images/react-logo.png">Лабораторные работы</a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="../../index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="../../labs.html">Лабораторные работы</a>
+                    </li>
+                    <li>
+                        <a href="../../theory.html">Теория</a>
+                    </li>
+                    <li>
+                        <a href="../../info.html">Справочник</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="general">
+
+    <div class="content">
+        <p class="section">Лабораторная работа №12</p>
+        <p class="lr-info">Темы: <a target="_blank" href="../../examples/advanced/portals/index.html">Порталы</a>, <a target="_blank" href="../../examples/redux/introduction/index.html">Введение в Redux</a>, <a target="_blank" href="../../examples/redux/actions/index.html">Действия</a>, <a target="_blank" href="../../examples/redux/reducers/index.html">Редюсеры</a>, <a target="_blank" href="../../examples/redux/store/index.html">Хранилище</a>, <a href="../../examples/redux/data-flow/index.html">Поток данных</a><br>
+            Время выполнения: 2 часа</p>
+        <p>Для выполнения этой лабораторной работы вам понадобится компонент <mark>Catalog</mark>, улучшенный в лабораторной работе №12 и <mark>SignUpForm</mark>, улучшенный в лабораторной работе №10.</p>
+        <p class="section">Задание 1</p>
+        <p>Модифицируйте компонент каталога товаров <mark>Catalog</mark>, добавив каждому товару кнопку для добавления его в корзину.</p>
+        <p>При нажатии на кнопку добавления в корзину выведите, используя портал, модальное окно с уведомлением о том, что товар был успешно добавлен в корзину, а также добавьте запись об этом товаре в хранилище Redux. Модальное окно должно содержать:</p>
+        <ul>
+            <li>название товара,</li>
+            <li>стоимость,</li>
+            <li>колчество товаров в корзине,</li>
+            <li>суммарная стоимость товаров в корзине,</li>
+            <li>кнопки «Перейти к оформлению заказа» (пока не функциональна) и «Продолжить просмотр товаров» (закрывает модальное окно).</li>
+        </ul>
+        
+        <p class="section">Задание 2</p>
+        <p>Создайте компонент формы авторизации <mark>SignInForm</mark>, содержащий поля для ввода адреса электронной почты и пароля. Интегрируйте его с компонентом <mark>SignUpForm</mark>. Если регистрация прошла успешно, поместите данные об аккаунте пользователя в хранилище Redux и предложите пользователю ввести адрес почты и пароль для входа. Если введённые адрес почты и пароль совпадают со значениями в хранилище, выведите сообщение о том, что вход прошёл успешно, если же не совпадают, сообщите об этом и предложите ввести их заново.</p>
+
+    </div>
+    <div class="site-nav">
+    <div class="site-nav-scroll">
+        <ul class="site-nav-list">
+            <p class="site-nav-name">Раздел 1. Установка и введение в React</p>
+            <li><a href="../lab01/index.html">Лабораторная работа №1</a></li>
+            <li><a href="../lab02/index.html">Лабораторная работа №2</a></li>
+            <li><a href="../lab03/index.html">Лабораторная работа №3</a></li>
+            <li><a href="../lab04/index.html">Лабораторная работа №4</a></li>
+            <li><a href="../lab05/index.html">Лабораторная работа №5</a></li>
+            <p class="site-nav-name">Раздел 2. Основы React</p>
+            <li><a href="../lab06/index.html">Лабораторная работа №6</a></li>
+            <li><a href="../lab07/index.html">Лабораторная работа №7</a></li>
+            <li><a href="../lab08/index.html">Лабораторная работа №8</a></li>
+            <li><a href="../lab09/index.html">Лабораторная работа №9</a></li>
+            <li><a href="../lab10/index.html">Лабораторная работа №10</a></li>
+            <p class="site-nav-name">Раздел 3. Redux.js</p>
+            <li><a href="../lab11/index.html">Лабораторная работа №11</a></li>
+            <li><a href="index.html">Лабораторная работа №12</a></li>
+            <li><a href="../lab13/index.html">Лабораторная работа №13</a></li>
+            <li><a href="../lab14/index.html">Лабораторная работа №14</a></li>
+            <li><a href="../lab15/index.html">Лабораторная работа №15</a></li>
+
+        </ul>
+        <script type="text/babel" src="../../libraries/navigator.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.site-nav-list a[href="index.html"]').parent().toggleClass('site-nav-list-active');
+            });
+            function handleResize() {
+                if ($(document.body).width() < 799) {
+                    $('.site-nav-scroll')
+                    .css('height', $('.site-nav-list').height() + 40)
+                    .css('overflow-y', 'hidden');
+                } else {
+                    $('.site-nav-scroll').css('height', '');
+                    $('.site-nav-scroll').height($('.content').height());
+                    if ($('.site-nav-list').outerHeight() > $('.site-nav-scroll').innerHeight()) {
+                        $('.site-nav-scroll').css('overflow-y', 'scroll');
+                    } else {
+                        $('.site-nav-scroll').css('overflow-y', 'hidden');
+                    }
+                }
+            }
+            $(function() {
+                document.body.onresize = handleResize;
+                handleResize();
+            });
+        </script>
+    </div>
+    </div>
+</div>
+
+</body>
+
+</html>

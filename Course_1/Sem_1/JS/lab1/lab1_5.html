@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type='text/javascript'>
+        function fun1() {
+            let a = +prompt("Введите первое число");
+            let b = +prompt("Введите второе число");
+            if (a > b)
+                alert("A больше B")
+            else
+                alert("B больше A")
+        }
+        function fun2() {
+            let m = +prompt("Введите первое число");
+            let n = +prompt("Введите второе число");
+            if ((m > n) && (m % 2 == 0))
+                alert("M больше N и является четным")
+            else
+                alert("M меньше N")
+        }
+    </script>
+</head>
+
+<body>
+    <input type='button' value='пример 1' onclick='fun1()' />
+    <input type='button' value='пример 2' onclick='fun2()' />
+</body>
+
+</html>

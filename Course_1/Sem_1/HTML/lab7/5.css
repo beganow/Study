@@ -1,0 +1,123 @@
+@keyframes im {
+    from{
+        position: relative;
+        left: 0; top: 0;
+    }
+    to{
+        position: relative;
+        left: 200px; top: 0;
+    }
+}
+@keyframes im2{
+    from{
+        position: relative;
+        left: 150px;
+        top: 0px;
+    }
+    to{
+        position: relative;
+        left: 150px;
+        top: 200px;
+    }
+}
+@keyframes im3{
+    from{
+        position: relative;
+        left: 300px;
+        top: 100px;
+    }
+    25%{
+        position: relative;
+        left: 150px;
+        top: 200px;
+    }
+    50%{
+        position: relative;
+        left: 300px;
+        top: 120px;
+    }
+    75%{
+        position: relative;
+        left: 230px;
+        top: 350px;
+    }
+    100%{
+        position: relative;
+        left: 300px;
+        top: 432px;
+    }
+}
+@keyframes im4{
+    from{
+        position: relative;
+        left: 150px;
+        top: 200px;
+    }
+    25%{
+        position: relative;
+        left: 150px;
+        top: 0px;
+    }
+    50%{
+        position: relative;
+        left: 300px;
+        top: 0px;
+    }
+    75%{
+        position: relative;
+        left: 300px;
+        top: 200px;
+    }
+    100%{
+        position: relative;
+        left: 150px;
+        top: 200px;
+    }
+}
+@keyframes h{
+    from{
+        opacity: 80%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+.img1{
+    animation-name: im;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.img2{
+    animation-name: im2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.img3{
+    animation-name: im3;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.img4{
+    animation-name: im4;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.h{
+    animation-name: h;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    text-align: center;
+}

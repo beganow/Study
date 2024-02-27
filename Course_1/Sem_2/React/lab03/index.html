@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛАБОРАТОРНЫЕ РАБОТЫ &#124; REACT.JS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../css/general.css">
+    <!--React.js-->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script src="../../libraries/prism.js"></script>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../../libraries/header.js"></script>
+    <style>
+        .flag {
+            display: inline-block !important;
+            width: 20px;
+        }
+    </style>
+</head>
+</head>
+
+<body>
+    <section class="nav-bar">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html"><img src="../../images/react-logo.png">Лабораторные работы</a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="../../index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="../../labs.html">Лабораторные работы</a>
+                    </li>
+                    <li>
+                        <a href="../../theory.html">Теория</a>
+                    </li>
+                    <li>
+                        <a href="../../info.html">Справочник</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="general">
+
+    <div class="content">
+    <p class="section">Лабораторная работа №3</p>
+    <p class="lr-info">Темы: <a target="_blank" href="../../examples/quick-start/lists-and-keys/index.html">Списки и ключи</a>, <a target="_blank" href="../../examples/quick-start/handling-events/index.html">Обработка событий</a><br>
+    Время выполнения: 2 часа</p>
+    <p class="section">Задание 1</p>
+    <p>Создайте компонент <mark>PhoneInput</mark>. Компонент должен позволять ввести номер телефона в международном формате и при помощи радиокнопок выбрать одного из мобильных операторов страны, чей номер введён. Страна может быть определена как автоматически — по введённому пользователем коду, — так и пользователем вручную при помощи списка. Реализуйте автоматическое форматирование номера телефона, то есть расстановку в нём пробелов, скобок и дефисов.
+    </p>
+    <table>
+        <thead><td>Страна</td><td>Формат номера телефона</td><td>Операторы</td></thead>
+        <tbody>
+            <tr><td><img class="flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAABt0lEQVRIS2Ps4uevYGZjr/+aX8nGwMDAwDOpE0QxfHv18iWYQSPAysDwSpzhfzBjr6jYd0ZGJrYveeVgq+jlAJBdIEcwNrX0/wVxwo7vf8nw/z+D7Lp1YIdc5wAHCM3ADqjJCAcc2wcOcro7oE9MAhwC6Y8egx3wODiYARQSX7ZtoZnvQQbDQwDDAUFBYIvp5oDRNIAeBaDgfz93DsOL7Cw6p4EHD18yMDExvJs+jeFtZyfDnxfP6eOAFZ7+fxXPnmQQi4t/ySIlyfC2q4tBMC2d4XVTA30cAEqEqscOMmieOwXOhvwREQxi7Z0M1znpWBApnj3BoHv8MNgBgpmZDCLlFfQrCRcHhv9VO3qQQcDW9iWHri7D+xkzGAQzsxhe19fSJwpguSDtxq2XjFycDG86OxneT59Gv0SILRuCHEG3EGiaOPcZuDbctRFcB8AqI+6FrDSNAoYzEOMZ4Q7YuQEsQHcH9EtIgUMg7cFDsANgtaGG/2b6hACGA6C1Id0cMJoG+iWkLjIwMIh+rmwGxzlvO6QAKvQFJw3aAlaG54wTpKRc//9j6P1c2SxCVwewMjxnEGIIAwCfu+ioy0e8vgAAAABJRU5ErkJggg=="> Беларусь</td><td><mark>+375 (XX) XXX-XX-XX</mark></td><td>МТС, A1, life:)</td></tr>
+            <tr><td><img class="flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAo0lEQVRIS2PcuO+I+u07D/d/+/5DkoGOgIuT47mqirwjY8+spc/obTnMnyBHMDZNnPsfJFCcHkdH/zMw9M5cBLZv1AGjITDwIcCoWf+fhZWNwcotnq654NDW2ZBcMOqA0RAYDYEBD4HlAgzg2tBaRoKu5cDRJy8g5cCoA0ZDYDCEwGUGBgYdumYBhGXnGZdxM4gzsTHs+/+fQYvOjjj//zeDJwBxf34P7r+YUwAAAABJRU5ErkJggg=="> Россия</td><td><mark>+7 (XXX) XXX-XX-XX</mark></td><td>Билайн, Мегафон, МТС, Tele2</td></tr>
+            <tr><td><img class="flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAkElEQVRIS2Nk8JstzvKfcc9/BgYdBjoCRgaGK38Y/7swsvjOuUxvy2H+BDmCkdl3zn+QgKa5Kx39z8Bw/eRusH2jDhgNgdEQGA2BgQ+BUw0M4JLQ1JuRriXh6a1gaxkYRx0wGgKjITAaAoMhBC4z0LlFDC9yGRnOM55oZRBn+s2wj4GBQYuuZTEjw/l/LAyeAIt/eV49symwAAAAAElFTkSuQmCC"> Украина</td><td><mark>+380 (XX) XXX-XX-XX</mark></td><td>Lifecell, Vodafone, Київстар</td></tr>
+            <tr><td><img class="flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAlklEQVRIS2PcuO+I+u07D/d/+/5DkoGOgIuT47mqirwjY8+spc/obTnMnyBHMDZNnPsfJFCcHkdH/zMw9M5cBLZv1AGjITAaAqMhMPAhMJmBAVwSeqlK07Uk3Hb7KaQkHHXAaAiMhsBoCAx4CMxkZnr26+8/uraIYUUuOzPTE8aNvLzqL759PfDr7z8JepbFIMvFubhdABr9hiLY/1hmAAAAAElFTkSuQmCC"> Польша</td><td><mark>+48 XXX-XXX-XXX</mark></td><td>Orange, Play, Plus, T-mobile</td></tr>
+            <tr><td><img class="flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYklEQVRYR2NkGGDAOMD2M4w6YDQEGD9sUw8ZyITI+HG7xv9RB4yGwICGwJ31OgObCPVy3EcdMBoCIzwEFqpbDGwIbJA3G3XAaAgMbAhMjTDfMqC14UBaDrJ7tFk+GgIDHgIAmVcsLny2L4UAAAAASUVORK5CYII="> Литва</td><td><mark>+370 (XX) XXX-XX-XX</mark></td><td>Telia, Bite, Tele2</td></tr>
+            <tr><td><img class="flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAi0lEQVRIS2PsZhf0Zfz3bzYDI6M4Az3B//8v/zMxpTL2sPK/oLvlMI/+//+SsYdN4D+I76quSU//M+y+eR1s36gDRkNgNAQGPgSaJs79z87OxpAaHUrXcmDKvKWQcmDUAQMeAqN1wWgIjIbAaAgMaKOUgeEZI7hZzvBvDsN/RjG61kYMDM/+MzJmAABXiXXUUZYtcAAAAABJRU5ErkJggg=="> Латвия</td><td><mark>+371 XXXX-XXXX</mark></td><td>LMT, Tele2, Bite</td></tr>
+        </tbody>
+    </table>
+    <p>Пример реализации выбора страны:</p>
+    <img src="img/demo_phone1.png" alt="Пример выбора страны">
+    <img src="img/demo_phone2.png" alt="Пример списка для выбора страны">
+    <p class="section">Задание 2</p>
+    <p>Реализуйте компонент таблицы <mark>SortTable</mark> с возможностью сортировки на примере каталога товаров. Таблица должна содержать следующие значения: номер строки, название товара, цена, количество. Добавить возможность сортировки по каждому значению, сортировка должна происходить как по возрастанию, так и по убыванию. Сортировка по названию в алфавитном прямом и обратном порядках. Тип сортировки менятся при клике на заголовке соответствующего столбца таблицы.</p>
+    <p>Нумерация должна оставаться правильной при любом типе сортировки. При количестве товаров менее трех выделять их желтым цветом, при отсутствии товара (количество, равное нулю) выделять красным цветом.</p>
+    <p>Пример реализации таблицы: </p>
+    <!-- TODO: на скриншоте должна быть нумерация -->
+    <img src="img/table_sort.png" alt="Пример таблицы с сортировкой">
+    </div>
+    <div class="site-nav">
+    <div class="site-nav-scroll">
+        <ul class="site-nav-list">
+            <p class="site-nav-name">Раздел 1. Установка и введение в React</p>
+            <li><a href="../lab01/index.html">Лабораторная работа №1</a></li>
+            <li><a href="../lab02/index.html">Лабораторная работа №2</a></li>
+            <li><a href="index.html">Лабораторная работа №3</a></li>
+            <li><a href="../lab04/index.html">Лабораторная работа №4</a></li>
+            <li><a href="../lab05/index.html">Лабораторная работа №5</a></li>
+            <p class="site-nav-name">Раздел 2. Основы React</p>
+            <li><a href="../lab06/index.html">Лабораторная работа №6</a></li>
+            <li><a href="../lab07/index.html">Лабораторная работа №7</a></li>
+            <li><a href="../lab08/index.html">Лабораторная работа №8</a></li>
+            <li><a href="../lab09/index.html">Лабораторная работа №9</a></li>
+            <li><a href="../lab10/index.html">Лабораторная работа №10</a></li>
+            <p class="site-nav-name">Раздел 3. Redux.js</p>
+            <li><a href="../lab11/index.html">Лабораторная работа №11</a></li>
+            <li><a href="../lab12/index.html">Лабораторная работа №12</a></li>
+            <li><a href="../lab13/index.html">Лабораторная работа №13</a></li>
+            <li><a href="../lab14/index.html">Лабораторная работа №14</a></li>
+            <li><a href="../lab15/index.html">Лабораторная работа №15</a></li>
+
+        </ul>
+        <script type="text/babel" src="../../libraries/navigator.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.site-nav-list a[href="index.html"]').parent().toggleClass('site-nav-list-active');
+            });
+            function handleResize() {
+                if ($(document.body).width() < 799) {
+                    $('.site-nav-scroll')
+                    .css('height', $('.site-nav-list').height() + 40)
+                    .css('overflow-y', 'hidden');
+                } else {
+                    $('.site-nav-scroll').css('height', '');
+                    $('.site-nav-scroll').height($('.content').height());
+                    if ($('.site-nav-list').outerHeight() > $('.site-nav-scroll').innerHeight()) {
+                        $('.site-nav-scroll').css('overflow-y', 'scroll');
+                    } else {
+                        $('.site-nav-scroll').css('overflow-y', 'hidden');
+                    }
+                }
+            }
+            $(function() {
+                document.body.onresize = handleResize;
+                handleResize();
+            });
+        </script>
+    </div>
+    </div>
+</div>
+
+</body>
+
+</html>

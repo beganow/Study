@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Лабораторная 4. Задание 3</title> 
+    </head>
+    <body>
+        <style>
+            body{
+                text-align: center;
+                background:white;
+            }
+        </style>
+        <script> 
+            var Arrai =["sliсe","pop","push","shift","sort"];
+            var a = new Array()
+            a[0] = Math.round(6*Math.PI*Math.PI +3*Math.exp(8));
+            a[1] = Math.round(2*Math.cos(4) +Math.cos(12)+8*Math.exp(3));
+            a[2] = Math.round(3*Math.sin(9) +Math.log(5)+Math.sqrt(3));
+            a[3] = Math.round(2*Math.tan(5) +6*Math.PI+Math.sqrt(12));
+            var str = new String("Ободов Павел Андреевич");
+             function fun0() {
+                alert(typeof 5);
+            }
+            document.write('Было:'+a);
+            document.write('<br>')
+            delete a[3];
+            document.write('<br>'+'Стало:'+a+'</br>');
+            document.write('<br>')
+            document.write("pop" in Arrai);
+            document.write('<br></br>')
+            document.write(str instanceof String);
+            document.write('<br></br>')
+            document.write(Math instanceof Object);
+            document.write('<br></br>')
+            document.write("slice" instanceof Object);
+            document.write('<br></br>')
+            document.write(Arrai instanceof Array);
+            document.write('<br></br>')
+            document.write(typeof 5);
+            document.write('<br></br>')
+            document.write(typeof a);
+            document.write('<br></br>')
+            document.write(typeof str);
+            document.write('<br></br>')
+            document.write(typeof Arrai);
+            document.write('<br></br>')
+            document.write(typeof Math);
+            document.write('<br></br>')
+            document.write(typeof Array);
+            document.write('<br></br>')
+            document.write(typeof String);
+            document.write('<br></br>')
+        </script>
+        <input type='button' value='typeof' onclick='fun0()' />
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <script type="text/javascript">
+        function fun1() {
+            let leng_of_circle;
+            let area_of_circle;
+            let a =+prompt("Введите a"); 
+            let b =+prompt("введите b")
+            document.write('<table border="1" align="center"><td>Радиус</td> <td>Длина окружности</td><td> Площадь окружности</td> </tr>');
+                do {
+                    document.write("<tr><td>" + a.toFixed(1) + "</td>"); // создаём новую строку в таблице, и в неё добавляем ячейки
+                    leng_of_circle = Math.round(2 * 3.14 * a);
+                    document.write("<td>" + leng_of_circle + "</td>");
+                    area_of_circle = Math.round(3.14 * a * a);
+                    document.write("<td>" + area_of_circle + "</tr></td>"); // добавляем последнюю ячейку и заканчиваем строку
+                        a = a + 0.3; // счётчик
+}            
+            while (a <= b){
+            document.write("</table>")}
+        }
+        </script>
+</head>
+<body>
+    <input type="button" value="круги" onclick="fun1()">
+</body>
+</html>

@@ -1,0 +1,33 @@
+img{
+    height: 400px;
+    width: 400px;
+    margin-left:150px;
+    margin-top: 50px;
+}
+.form1:hover{
+    transform: scale(0.5);
+}
+.form2:hover{
+    transform: rotate(45deg);
+}
+.form3:hover{
+    transform: translate(50px);
+}
+.form4:hover{
+    transform: rotate(-20deg);
+}
+.h{
+    animation-name: h;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    text-align: center;
+}
+@keyframes h{
+    from{
+        opacity: 80%;
+    }
+    to{
+        opacity: 0%;
+    }
+}

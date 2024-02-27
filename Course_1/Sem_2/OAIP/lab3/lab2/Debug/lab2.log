@@ -1,0 +1,4 @@
+﻿  task1.cpp
+D:\Лабы\Лаба C++\Белодед\сем 2\lab3\lab2\task1.cpp(6,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\Лабы\Лаба C++\Белодед\сем 2\lab3\lab2\task1.cpp(8,10): warning C4101: buff: неиспользованная локальная переменная
+  lab2.vcxproj -> D:\Лабы\Лаба C++\Белодед\сем 2\lab3\Debug\task1.exe

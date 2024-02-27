@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="lab11_1.css"?>
+<FACULTY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="lab11_3.xsd">
+<SPECIALIZATION>ISIT</SPECIALIZATION>
+<NAME>Pavel</NAME>
+<EXAM>XML</EXAM>
+<PAGES>20pg</PAGES>
+<PASSING>300ball</PASSING>
+<SPECIALIZATION>BT</SPECIALIZATION>
+<NAME>Igor</NAME>
+<EXAM>Chemical</EXAM>
+<PAGES>40pg</PAGES>
+<PASSING>200ball</PASSING>
+</FACULTY>
+ 

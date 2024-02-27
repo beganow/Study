@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание№2</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var Arrai =["sliсe","pop","push","shift","sort"];
+        var Mathe =["pow","round","floor","sline","sqrt"];
+        var Both=[...Arrai,...Mathe];
+        Arrai.unshift('concat'); // добавление concat как начальный элемент массива
+        document.write(Arrai);
+        document.write("<br>"+Arrai.length+"</br>");
+        Mathe.push('cos'); // добавление cos как конечный элемент массива
+        document.write(Mathe);
+        document.write("<br>"+Mathe.length+"</br>");
+        Both.unshift('concat');
+        Both.push('cos');
+        document.write(Both);
+        document.write("<br>"+Both.length+"</br>");
+    </script>
+</body>
+</html>
