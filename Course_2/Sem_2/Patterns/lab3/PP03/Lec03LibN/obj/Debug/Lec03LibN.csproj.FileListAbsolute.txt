@@ -1,0 +1,10 @@
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\bin\Debug\Lec03LibN.dll
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\bin\Debug\Lec03LibN.pdb
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\bin\Debug\Microsoft.Analytics.Interfaces.dll
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\bin\Debug\Microsoft.Analytics.Types.dll
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\obj\Debug\Lec03LibN.csproj.AssemblyReference.cache
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\obj\Debug\Lec03LibN.csproj.CoreCompileInputs.cache
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\obj\Debug\Lec03LibN.csproj.CopyComplete
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\obj\Debug\Lec03LibN.dll
+D:\4 семестр\Паттерны\lab3\PP03\Lec03LibN\obj\Debug\Lec03LibN.pdb

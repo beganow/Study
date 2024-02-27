@@ -1,0 +1,11 @@
+D:\4 семестр\Паттерны\lab3\PP03\PP03\bin\Debug\PP03.exe.config
+D:\4 семестр\Паттерны\lab3\PP03\PP03\bin\Debug\PP03.exe
+D:\4 семестр\Паттерны\lab3\PP03\PP03\bin\Debug\PP03.pdb
+D:\4 семестр\Паттерны\lab3\PP03\PP03\obj\Debug\PP03.csproj.AssemblyReference.cache
+D:\4 семестр\Паттерны\lab3\PP03\PP03\obj\Debug\PP03.csproj.SuggestedBindingRedirects.cache
+D:\4 семестр\Паттерны\lab3\PP03\PP03\obj\Debug\PP03.csproj.CoreCompileInputs.cache
+D:\4 семестр\Паттерны\lab3\PP03\PP03\obj\Debug\PP03.exe
+D:\4 семестр\Паттерны\lab3\PP03\PP03\obj\Debug\PP03.pdb
+D:\4 семестр\Паттерны\lab3\PP03\PP03\bin\Debug\Lec03LibN.dll
+D:\4 семестр\Паттерны\lab3\PP03\PP03\bin\Debug\Lec03LibN.pdb
+D:\4 семестр\Паттерны\lab3\PP03\PP03\obj\Debug\PP03.csproj.CopyComplete

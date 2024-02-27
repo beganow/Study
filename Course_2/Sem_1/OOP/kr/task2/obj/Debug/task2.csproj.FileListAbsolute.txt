@@ -1,0 +1,7 @@
+D:\Лаба Пацей\kr\task2\bin\Debug\task2.exe.config
+D:\Лаба Пацей\kr\task2\bin\Debug\task2.exe
+D:\Лаба Пацей\kr\task2\bin\Debug\task2.pdb
+D:\Лаба Пацей\kr\task2\obj\Debug\task2.csproj.AssemblyReference.cache
+D:\Лаба Пацей\kr\task2\obj\Debug\task2.csproj.CoreCompileInputs.cache
+D:\Лаба Пацей\kr\task2\obj\Debug\task2.exe
+D:\Лаба Пацей\kr\task2\obj\Debug\task2.pdb

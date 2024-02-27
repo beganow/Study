@@ -1,0 +1,3 @@
+﻿  ClientU.cpp
+D:\ПСП\lab3\ServerU\ClientU\ClientU.cpp(15,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+LINK : fatal error LNK1201: Ошибка при записи в базу данных "D:\ПСП\lab3\ServerU\Debug\ClientU.pdb" программы; возможно, не хватает места на диске, недопустимый путь или недостаточно прав

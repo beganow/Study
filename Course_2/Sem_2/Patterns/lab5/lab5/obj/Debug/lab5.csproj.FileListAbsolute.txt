@@ -1,0 +1,10 @@
+D:\PP\lab5\lab5\obj\Debug\lab5.csproj.AssemblyReference.cache
+D:\PP\lab5\lab5\obj\Debug\lab5.csproj.CoreCompileInputs.cache
+D:\PP\lab5\lab5\bin\Debug\lab5.exe.config
+D:\PP\lab5\lab5\bin\Debug\lab5.exe
+D:\PP\lab5\lab5\bin\Debug\lab5.pdb
+D:\PP\lab5\lab5\bin\Debug\Lab5Lic.dll
+D:\PP\lab5\lab5\bin\Debug\Lab5Lic.pdb
+D:\PP\lab5\lab5\obj\Debug\lab5.csproj.CopyComplete
+D:\PP\lab5\lab5\obj\Debug\lab5.exe
+D:\PP\lab5\lab5\obj\Debug\lab5.pdb

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfWork xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Work>
+    <Company>щр</Company>
+    <Post>hr</Post>
+    <Expir>13</Expir>
+    <Phone>567665</Phone>
+    <Sphere>IT</Sphere>
+    <Salary>100</Salary>
+  </Work>
+</ArrayOfWork>

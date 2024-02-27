@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <Name>Павел</Name>
+    <PostIndex>0</PostIndex>
+    <Surname>Ободов</Surname>
+    <Patronymic>Андреевич</Patronymic>
+    <Speciality>ИСИТ</Speciality>
+    <Curs>2</Curs>
+    <Ball>7</Ball>
+  </Student>
+  <Student>
+    <Name>Матвей</Name>
+    <PostIndex>0</PostIndex>
+    <Surname>Карпенков</Surname>
+    <Patronymic>Константинович</Patronymic>
+    <Speciality>ПОИТ</Speciality>
+    <Curs>3</Curs>
+    <Ball>8</Ball>
+  </Student>
+  <Student>
+    <Name>апупауц</Name>
+    <PostIndex>0</PostIndex>
+    <Surname>ауцауц</Surname>
+    <Patronymic>уиук</Patronymic>
+    <Speciality>ИСИТ</Speciality>
+    <Curs>1</Curs>
+    <Ball>9</Ball>
+  </Student>
+</ArrayOfStudent>

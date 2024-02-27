@@ -1,0 +1,43 @@
+
+10.11.2022 5:35:44
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 5:35:59
+Error code 2: Uncorrect power.
+Ошибка скорость не может быть равна: 0
+10.11.2022 5:39:06
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 5:45:43
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 5:45:56
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 5:46:29
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 5:47:03
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 5:48:44
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 5:49:01
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 5:49:06
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 5:50:16
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 18:11:53
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 18:12:17
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S
+10.11.2022 18:18:19
+Error code 4: Uncorrect name.
+Ошибка назвнии авто S

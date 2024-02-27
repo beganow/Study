@@ -1,0 +1,15 @@
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.Form1.resources
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.Properties.Resources.resources
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.csproj.GenerateResource.cache
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.csproj.CoreCompileInputs.cache
+D:\ООП\4 сем\lab2\lab2\bin\Debug\lab2.exe.config
+D:\ООП\4 сем\lab2\lab2\bin\Debug\lab2.exe
+D:\ООП\4 сем\lab2\lab2\bin\Debug\lab2.pdb
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.exe
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.pdb
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.Form2.resources
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.Form3.resources
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.Form4.resources
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.csproj.AssemblyReference.cache
+D:\ООП\4 сем\lab2\lab2\bin\Debug\System.ComponentModel.Annotations.dll
+D:\ООП\4 сем\lab2\lab2\obj\Debug\lab2.csproj.CopyComplete

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ArrayOfAdress xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Adress>
+    <city>цйрацй</city>
+    <postIndex>12331</postIndex>
+    <street>ауцруца</street>
+    <house>45</house>
+    <floate>56</floate>
+  </Adress>
+</ArrayOfAdress>

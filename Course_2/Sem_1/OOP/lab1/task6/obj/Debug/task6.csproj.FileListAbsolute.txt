@@ -1,0 +1,6 @@
+D:\Лаба Пацей\lab1\task6\obj\Debug\task6.csproj.CoreCompileInputs.cache
+D:\Лаба Пацей\lab1\task6\bin\Debug\task6.exe.config
+D:\Лаба Пацей\lab1\task6\bin\Debug\task6.exe
+D:\Лаба Пацей\lab1\task6\bin\Debug\task6.pdb
+D:\Лаба Пацей\lab1\task6\obj\Debug\task6.exe
+D:\Лаба Пацей\lab1\task6\obj\Debug\task6.pdb

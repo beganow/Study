@@ -1,0 +1,6 @@
+use UNIVER
+Select max(AUDITORIUM_CAPACITY) as [Максимальная вместительность],
+ min(AUDITORIUM_CAPACITY) as [Минимальная вместительность],
+ avg(AUDITORIUM_CAPACITY) as [Средняя вместительность],
+ count(*) as [Общее кол-во аудиторий]
+From AUDITORIUM

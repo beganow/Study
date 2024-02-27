@@ -1,0 +1,7 @@
+D:\Лаба Пацей\lab5\lab5\lab5\bin\Debug\lab5.exe.config
+D:\Лаба Пацей\lab5\lab5\lab5\bin\Debug\lab5.exe
+D:\Лаба Пацей\lab5\lab5\lab5\bin\Debug\lab5.pdb
+D:\Лаба Пацей\lab5\lab5\lab5\obj\Debug\lab5.csproj.AssemblyReference.cache
+D:\Лаба Пацей\lab5\lab5\lab5\obj\Debug\lab5.csproj.CoreCompileInputs.cache
+D:\Лаба Пацей\lab5\lab5\lab5\obj\Debug\lab5.exe
+D:\Лаба Пацей\lab5\lab5\lab5\obj\Debug\lab5.pdb

@@ -1,0 +1,4 @@
+﻿  Mail.cpp
+D:\ПСП\ClientMS\ClientMS\Mail.cpp(15,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\ПСП\ClientMS\ClientMS\Mail.cpp(30,8): warning C4101: count: неиспользованная локальная переменная
+  ClientMS.vcxproj -> D:\ПСП\ClientMS\Debug\ClientMS.exe

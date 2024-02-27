@@ -1,0 +1,22 @@
+/*6.Разработать SELECT-запрос, с по-мощью которого из таблицы PRO-GRESS удаляются строки, содержа-щие информацию о студентах, 
+полу-чивших оценки ниже 4 (использовать объединение таблиц PROGRESS, STUDENT, GROUPS). 
+Разработать SELECT-запрос, с по-мощью которого в таблице PRO-GRESS
+для студента с конкретным номером IDSTUDENT корректирует-ся оценка (увеличивается на едини-цу).
+*/
+USE UNIVER;
+DECLARE @NOTE INT, @NAME NVARCHAR(50), @FACULTY NVARCHAR(20);
+DECLARE GOODBYE CURSOR DYNAMIC GLOBAL FOR
+SELECT PROGRESS.NOTE, STUDENT.NAME, GROUPS.FACULTY
+FROM PROGRESS 
+JOIN STUDENT ON PROGRESS.IDSTUDENT = STUDENT.IDSTUDENT
+JOIN GROUPS ON STUDENT.IDGROUP = GROUPS.IDGROUP
+OPEN GOODBYE
+FETCH GOODBYE INTO @NOTE, @NAME, @FACULTY
+WHILE @@FETCH_STATUS = 0
+BEGIN
+PRINT 'Студент ' + CAST(@NOTE AS NVARCHAR(10)) + ' - ' + @NAME + ' - ' + @FACULTY
+FETCH GOODBYE INTO @NOTE, @NAME, @FACULTY
+IF @NOTE <4
+DELETE PROGRESS WHERE CURRENT OF GOODBYE
+END
+CLOSE GOODBYE;

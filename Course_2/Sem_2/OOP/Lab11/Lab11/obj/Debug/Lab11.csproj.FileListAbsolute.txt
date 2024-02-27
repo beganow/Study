@@ -1,0 +1,13 @@
+D:\ООП\Lab11\Lab11\bin\Debug\Lab11.exe.config
+D:\ООП\Lab11\Lab11\bin\Debug\Lab11.exe
+D:\ООП\Lab11\Lab11\bin\Debug\Lab11.pdb
+D:\ООП\Lab11\Lab11\obj\Debug\View\Main.g.cs
+D:\ООП\Lab11\Lab11\obj\Debug\App.g.cs
+D:\ООП\Lab11\Lab11\obj\Debug\Lab11_MarkupCompile.cache
+D:\ООП\Lab11\Lab11\obj\Debug\View\Main.baml
+D:\ООП\Lab11\Lab11\obj\Debug\Lab11.g.resources
+D:\ООП\Lab11\Lab11\obj\Debug\Lab11.Properties.Resources.resources
+D:\ООП\Lab11\Lab11\obj\Debug\Lab11.csproj.GenerateResource.cache
+D:\ООП\Lab11\Lab11\obj\Debug\Lab11.csproj.CoreCompileInputs.cache
+D:\ООП\Lab11\Lab11\obj\Debug\Lab11.exe
+D:\ООП\Lab11\Lab11\obj\Debug\Lab11.pdb

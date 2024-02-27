@@ -1,0 +1,5 @@
+﻿  ClientB.cpp
+D:\ПСП\ClientB\ClientB\ClientB.cpp(19,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\ПСП\ClientB\ClientB\ClientB.cpp(30,7): warning C4101: ibuf: неиспользованная локальная переменная
+D:\ПСП\ClientB\ClientB\ClientB.cpp(28,6): warning C4101: lobuf: неиспользованная локальная переменная
+  ClientB.vcxproj -> D:\ПСП\ClientB\Debug\ClientB.exe

@@ -1,0 +1,60 @@
+#################################################
+Действие: OPBDiskInfo.getDrives()
+Время: 15.12.2022 15:31:44
+Действие: OPBFileInfo.getFile()
+Имя файла: OPBlogfile
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 15:31:44
+Действие: OPBDirInfo.GetDir()
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 15:31:44
+#################################################
+Действие: OPBDiskInfo.getDrives()
+Время: 15.12.2022 15:32:48
+Действие: OPBFileInfo.getFile()
+Имя файла: OPBlogfile
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 15:32:48
+Действие: OPBDirInfo.GetDir()
+Путь: D:\Лаба Пацей\lab12\OPBdirInfo.txt
+Время: 15.12.2022 15:32:48
+#################################################
+Действие: OPBDiskInfo.getDrives()
+Время: 15.12.2022 15:33:39
+Действие: OPBFileInfo.getFile()
+Имя файла: OPBlogfile
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 15:33:39
+Действие: OPBDirInfo.GetDir()
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 15:33:39
+#################################################
+Действие: OPBDiskInfo.getDrives()
+Время: 15.12.2022 18:19:27
+Действие: OPBFileInfo.getFile()
+Имя файла: OPBlogfile
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 18:19:27
+Действие: OPBDirInfo.GetDir()
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 18:19:27
+#################################################
+Действие: OPBDiskInfo.getDrives()
+Время: 15.12.2022 18:19:37
+Действие: OPBFileInfo.getFile()
+Имя файла: OPBlogfile
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 18:19:37
+Действие: OPBDirInfo.GetDir()
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 18:19:37
+#################################################
+Действие: OPBDiskInfo.getDrives()
+Время: 15.12.2022 18:21:33
+Действие: OPBFileInfo.getFile()
+Имя файла: OPBlogfile
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 18:21:33
+Действие: OPBDirInfo.GetDir()
+Путь: D:\Лаба Пацей\lab12\OPBlogfile.txt
+Время: 15.12.2022 18:21:33

@@ -1,0 +1,9 @@
+10.11.2022 4:50:29
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:51:03
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:51:14
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000

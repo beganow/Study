@@ -1,0 +1,7 @@
+D:\Лаба Пацей\kr\kr\bin\Debug\kr.exe.config
+D:\Лаба Пацей\kr\kr\bin\Debug\kr.exe
+D:\Лаба Пацей\kr\kr\bin\Debug\kr.pdb
+D:\Лаба Пацей\kr\kr\obj\Debug\kr.csproj.AssemblyReference.cache
+D:\Лаба Пацей\kr\kr\obj\Debug\kr.csproj.CoreCompileInputs.cache
+D:\Лаба Пацей\kr\kr\obj\Debug\kr.exe
+D:\Лаба Пацей\kr\kr\obj\Debug\kr.pdb

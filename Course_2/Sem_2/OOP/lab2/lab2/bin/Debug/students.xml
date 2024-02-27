@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <Name>Pavel</Name>
+    <City>Moskow</City>
+    <PostIndex>212035</PostIndex>
+    <Street>Builder</Street>
+    <House>1</House>
+    <Floate>11</Floate>
+    <Surname>Zayats</Surname>
+    <Patronymic>Dmirtyy</Patronymic>
+    <Birth>18.10.2003</Birth>
+    <Speciality>ДЭЙиВИ</Speciality>
+    <Curs>2 курс</Curs>
+    <Group>10 группа</Group>
+    <Ball>10</Ball>
+    <Grants>0</Grants>
+    <Gender>Женский</Gender>
+  </Student>
+</ArrayOfStudent>

@@ -1,0 +1,5 @@
+﻿  ServerS.cpp
+D:\ПСП\Lab5\Lab5\ServerS.cpp(19,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\ПСП\Lab5\Lab5\ServerS.cpp(30,7): warning C4101: ibuf: неиспользованная локальная переменная
+D:\ПСП\Lab5\Lab5\ServerS.cpp(28,6): warning C4101: lobuf: неиспользованная локальная переменная
+  Lab5.vcxproj -> D:\ПСП\Lab5\Debug\Lab5.exe

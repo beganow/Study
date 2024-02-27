@@ -1,0 +1,7 @@
+D:\Лаба Пацей\lab1\task1_4\bin\Debug\task1_4.exe.config
+D:\Лаба Пацей\lab1\task1_4\bin\Debug\task1_4.exe
+D:\Лаба Пацей\lab1\task1_4\bin\Debug\task1_4.pdb
+D:\Лаба Пацей\lab1\task1_4\obj\Debug\task1_4.csproj.AssemblyReference.cache
+D:\Лаба Пацей\lab1\task1_4\obj\Debug\task1_4.csproj.CoreCompileInputs.cache
+D:\Лаба Пацей\lab1\task1_4\obj\Debug\task1_4.exe
+D:\Лаба Пацей\lab1\task1_4\obj\Debug\task1_4.pdb

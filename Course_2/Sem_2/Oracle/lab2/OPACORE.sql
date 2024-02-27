@@ -1,0 +1,14 @@
+CREATE TABLE OPA_T
+    (
+        id NUMBER,
+        name VARCHAR2(20)
+    )
+INSERT INTO OPA_T VALUES (1, 'Matvei');
+INSERT INTO OPA_T VALUES (2, 'Nikita');
+INSERT INTO OPA_T VALUES (3, 'Gleb');
+INSERT INTO OPA_T VALUES (4, 'Ann');
+
+
+
+SELECT * FROM OPA_T;
+DROP TABLE OPA_T;

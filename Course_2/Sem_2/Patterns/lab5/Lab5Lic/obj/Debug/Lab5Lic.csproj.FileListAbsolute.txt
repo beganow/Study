@@ -1,0 +1,6 @@
+D:\PP\lab5\Lab5Lic\obj\Debug\Lab5Lic.csproj.AssemblyReference.cache
+D:\PP\lab5\Lab5Lic\obj\Debug\Lab5Lic.csproj.CoreCompileInputs.cache
+D:\PP\lab5\Lab5Lic\bin\Debug\Lab5Lic.dll
+D:\PP\lab5\Lab5Lic\bin\Debug\Lab5Lic.pdb
+D:\PP\lab5\Lab5Lic\obj\Debug\Lab5Lic.dll
+D:\PP\lab5\Lab5Lic\obj\Debug\Lab5Lic.pdb

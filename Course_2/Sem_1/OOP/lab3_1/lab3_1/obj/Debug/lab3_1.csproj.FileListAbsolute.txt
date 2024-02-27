@@ -1,0 +1,7 @@
+D:\Лаба Пацей\lab3_1\lab3_1\bin\Debug\lab3_1.exe.config
+D:\Лаба Пацей\lab3_1\lab3_1\bin\Debug\lab3_1.exe
+D:\Лаба Пацей\lab3_1\lab3_1\bin\Debug\lab3_1.pdb
+D:\Лаба Пацей\lab3_1\lab3_1\obj\Debug\lab3_1.csproj.AssemblyReference.cache
+D:\Лаба Пацей\lab3_1\lab3_1\obj\Debug\lab3_1.csproj.CoreCompileInputs.cache
+D:\Лаба Пацей\lab3_1\lab3_1\obj\Debug\lab3_1.exe
+D:\Лаба Пацей\lab3_1\lab3_1\obj\Debug\lab3_1.pdb

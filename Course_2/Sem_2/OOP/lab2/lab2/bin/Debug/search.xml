@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStudent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Student>
+    <Name>Павел</Name>
+    <PostIndex>0</PostIndex>
+    <Surname>Ободов</Surname>
+    <Patronymic>Андреевич</Patronymic>
+    <Speciality>ИСИТ</Speciality>
+    <Curs>2</Curs>
+    <Ball>7</Ball>
+  </Student>
+</ArrayOfStudent>

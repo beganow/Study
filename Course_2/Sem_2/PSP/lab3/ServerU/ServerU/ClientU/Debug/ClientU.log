@@ -1,0 +1,5 @@
+﻿  ClientU.cpp
+D:\ПСП\lab3\ServerU\ClientU\ClientU.cpp(15,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\ПСП\lab3\ServerU\ClientU\ClientU.cpp(40,7): warning C4101: lb: неиспользованная локальная переменная
+D:\ПСП\lab3\ServerU\ClientU\ClientU.cpp(41,8): warning C4101: ibuf: неиспользованная локальная переменная
+  ClientU.vcxproj -> D:\ПСП\lab3\ServerU\Debug\ClientU.exe

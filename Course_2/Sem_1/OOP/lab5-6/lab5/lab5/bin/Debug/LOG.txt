@@ -1,0 +1,75 @@
+10.11.2022 4:09:03
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:15:32
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:17:11
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:20:07
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:21:18
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:22:28
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:32:27
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:35:16
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:35:45
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:36:10
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:37:31
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:37:50
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
+10.11.2022 4:38:24
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:38:49
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:39:16
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:39:49
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:40:25
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:42:30
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:43:44
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 158003
+10.11.2022 4:45:05
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:45:45
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:46:24
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:46:49
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:47:39
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 50000
+10.11.2022 4:48:55
+Error code 3: Uncorrect power input for search.
+Ошибка! Неверно введена стоимость  для поиска: 500000
