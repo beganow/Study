@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../CSS/Contact.css">
+   <title>Contact</title>
+</head>
+<body>
+   <header class="header">
+      <div class="wrapper">
+         <a href="../index.html">
+            <div class="logo">
+               <img src="../IMG/logo.svg" alt="logo">
+               <p>LuxAv</p>
+            </div>
+         </a>
+         <nav class="nav">
+            <ul>
+               <li>
+                  <a href="../index.html">Главная </a>
+               </li>
+               <li>
+                  <a href="Catalog.html">Каталог </a>
+               </li>
+               <li>
+                  <a href="Service.html">Сервис </a>
+               </li>
+               <li>
+                  <a href="History.html">История создания</a>
+               </li>
+                  <li class="mobile">
+                     <img src="../IMG/phone.svg" alt="phone" class="phone">
+               <p> Контакты</p>
+                 <div class="hidden_menu">
+                    <div class="blocks">
+                           <ul>
+                   <li>
+                         Life: +375 29 654-54-54 
+                      </li>
+                        <li>
+                           МТС: +375 29 654-54-54
+                        </li>
+                        <li>
+                           А1: +375 29 654-54-54
+                        </li>
+                   </ul>
+                     <div class="icons">
+                           <a href="https://www.instagram.com/">
+                              <img src="../IMG/icons/insta.svg" alt="instagram">
+                           </a>
+                           <a href="https://vk.com/feed">
+                              <img src="../IMG/icons/VK.svg" alt="vk">
+                           </a>
+                           <a href="https://www.facebook.com/">
+                           <img src="../IMG/icons/Facebook.svg" alt="facebook">
+                  </a>
+                        </div>
+                    </div> 
+                 </div>
+               </li>
+               <li>
+                  <a href="Contact.html" class="active">Как нас найти</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="burger">
+            <div class="containers">
+               <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main class="main">
+      <div class="wrapper">
+         <h1 class="title">Где нас найти?</h1>
+      </div>
+   </main>
+   <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73933.70884822377!2d30.28074560300434!3d53.88997372801612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d0521c52844571%3A0xcf85d14239bb73b6!2z0JzQvtCz0LjQu9GR0LI!5e0!3m2!1sru!2sby!4v1651939826695!5m2!1sru!2sby" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" allowfullscreen="true"></iframe>
+   </section>
+   <section class="buy">
+      <div class="wrapper">
+         <h1 class="title_buy">
+            Оформить заказ
+         </h1>
+         <p class="desceiption">
+            Заполните форму и мы свяжемся с вами в ближайшее время
+         </p>
+
+         <div class="form">
+<form>            
+            <label for="name">
+               Ваше имя
+            </label>
+            <input type="text" id="name" required placeholder="Введите имя">
+            <label for="phone">
+               Ваш телефон
+            </label>
+            <input type="text" id="phone" required placeholder="Введите телефон">
+            <label for="email">
+               Ваш email
+            </label>
+            <input type="text" id="email" required placeholder="Введите email">
+            <label for="message">
+               Марка автомобиля
+            </label>
+            <input type="text" id="message" required placeholder="Введите марку автомобиля">
+            <label for="message">
+               Двигатели
+            </label>
+            <input type="text" id="message" required placeholder="Введите двигатели">
+            <div class="buttons">
+               <button class="button reg">
+                  Отправить заявку
+               </button>
+
+               <input type="reset"/>
+                 
+            </div>
+         </form>
+         </div>
+      </div>
+   </section>
+   <script src="../JS/main.js"></script>
+<script>
+   let reg = document.querySelector('.reg');
+   let inputs = document.querySelectorAll('input');
+reg.addEventListener ('click', function(){
+
+   if(inputs[0].value == '' || inputs[1].value == '' || inputs[2].value == '' || inputs[3].value == '' || inputs[4].value == ''){
+      console.log('Заполните все поля');
+   }
+   else{
+      alert('Ваша заявка отправлена');
+   } 
+   for (let i = 0; i < inputs.length; i++) {
+      if (inputs[i].value == '') {  
+         inputs[i].style.border = '1px solid red';
+      } else {
+         inputs[i].style.border = '1px solid green';
+      }
+   
+   }
+});
+</script>
+</body>
+
+</html>

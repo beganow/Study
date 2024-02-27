@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Homes</title>
+    <script src=jquery.js></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Moon+Dance&family=Oooh+Baby&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 15px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .rerut {
+            background-color: aqua;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container1 {
+            width: 100%;
+            max-width: 1400px;
+            margin-left: 50px;
+            position: relative;
+        }
+
+        .container2 {
+
+            margin-top: 50px;
+        }
+
+        .container4 {
+            margin-top: 100px;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            background: url("h1.png") center no-repeat;
+            background-size: cover;
+        }
+
+        .intro_inner {
+            width: 100%;
+            max-width: 900px;
+
+            margin-left: 450px;
+            text-align: center;
+        }
+
+        .intro_supertitle {
+            font-size: 30px;
+            color: navy;
+            font-weight: inherit;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .intro-title {
+            margin-top: 30px;
+            margin-bottom: 85px;
+            color: cyan;
+            font-size: 150px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Moon dance";
+            line-height: 1.1;
+        }
+
+        .intro_supertitle::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: blueviolet;
+            margin: 60px auto 0;
+            margin-bottom: 50px;
+
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            width: 100%;
+
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+            font-family: "Pushster";
+        }
+
+        .nav {
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav__link {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.1s linear;
+        }
+
+        .nav__link::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            opacity: 0;
+            background-color: blue;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+            transition: color 0.1s linear;
+        }
+
+        .nav__link:hover::after {
+            opacity: 1;
+        }
+
+        .nav__link1 {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.1s linear;
+        }
+
+        .nav__link1:hover {
+            background-image: url(register1.jpg);
+            background-repeat: no-repeat;
+            padding-left: 40px;
+
+        }
+
+        .header__inner {
+            display: flex;
+            padding: 25px 0;
+            border-bottom: 1px solid #fff;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-block;
+            color: #fff;
+            vertical-align: top;
+            border: 4px double burlywood;
+            padding: 8px 30px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 100px 0;
+
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .features_item {
+            width: 33%;
+            padding: 0 20px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .features_icon {
+            margin-bottom: 25px;
+        }
+
+        .features_title {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .features_text {
+            font-size: 14px;
+            color: grey;
+            line-height: 1, 5;
+        }
+
+        .catalog_title {
+            color: black;
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .butt {
+            font-size: 20px;
+            text-align: center;
+            margin-left: 25%;
+            padding: 10px;
+            background-color: red;
+            border-radius: 25px;
+            width: 600px;
+            margin-bottom: 50px;
+        }
+
+        .formh {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .regu {
+            margin: 70px;
+            margin-top: 100px;
+            font-size: 40px;
+            border: 2px dashed yellow;
+            border-radius: 40px;
+        }
+
+        .regu:hover {
+            background-color: blue;
+            color: #fff;
+        }
+
+        .send34 {
+            display: block;
+            margin-left: 35%;
+            border: 4px solid black;
+            font-size: 30px;
+            width: 400px;
+        }
+
+        .project {
+            position: relative;
+            padding: 0 40px;
+            color: #333;
+            width: 100%;
+            display: inline-block;
+            margin-bottom: 50px;
+
+        }
+
+        .project p {
+            text-align: center;
+        }
+
+        .project .content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 60px;
+            margin: 40px 0px;
+            width: 100%;
+        }
+
+        .project .content .workBox {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .project .content .workBox .imgBox {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform: translateY(0);
+            transition: 1s ease-in-out;
+        }
+
+        .project .content .workBox:hover .imgBox {
+            transform: translateY(-100%);
+
+        }
+
+        .project .content .workBox .imgBox img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project .content .workBox .textBox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            transform: translateY(100%);
+            transition: 1s ease-in-out;
+
+        }
+
+        .project .content .workBox:hover .textBox {
+            transform: translateY(0);
+        }
+
+
+        .project .content .workBox .textBox h3 {
+            color: white;
+            font-size: 1em;
+            margin-left: 0px;
+
+
+        }
+
+        .slider {
+            width: 404px;
+            height: 304px;
+            margin-left: 50px;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+
+        .slider1 {
+            width: 404px;
+            height: 304px;
+
+            border: 2px solid black;
+            overflow: hidden;
+            float: right;
+            margin-top: 150px;
+
+        }
+
+        .slider_line {
+            height: 300px;
+            width: 2500px;
+            display: flex;
+            position: relative;
+            left: 0;
+            transition: all ease 1s;
+
+        }
+
+        .slider_line1 {
+
+            height: 300px;
+            width: 2500px;
+            display: flex;
+            position: relative;
+
+            transition: all ease 1s;
+
+        }
+
+        .slider_title {
+            width: 700px;
+            float: right;
+        }
+
+        .slider_title1 {
+            float: left;
+            width: 500px;
+            margin-top: 150px;
+
+        }
+
+        .slider_next {
+            width: 50px;
+            height: 50px;
+            float: right;
+            margin-right: 265px;
+            margin-top: 130px;
+
+
+        }
+
+        .slider_prev {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-top: 135px;
+            margin-left: 50px;
+        }
+
+        .slider_next1 {
+            width: 50px;
+            height: 50px;
+            float: right;
+            margin-top: 280px;
+            margin-right: 100px;
+
+        }
+
+        .slider_prev1 {
+            width: 50px;
+            height: 50px;
+            margin-left: 415px;
+            margin-top: 280px;
+
+
+        }
+
+        .titlesli {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">MyHomes</div>
+                <nav class="nav">
+                    <a id='p1' class="nav__link" href="#about">About</a>
+                    <a id='p3' class="nav__link" href="#build">Bulding</a>
+                    <a id='p4' class="nav__link" href="#work">Work</a>
+                    <a id='p5' class="nav__link" href="#">Contact</a>
+                    <a id='p6' class="nav__link1" href="#formh">Your Profile</a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+
+        <div class="container1">
+            <div class="intro_inner">
+                <h1 class="intro-title">Welcome to MyHomes</h1>
+                <h2 class="intro_supertitle">Buy beautiful and comfortable house</h2>
+                <a class="btn" id='myscroll' href="#">View more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id='about'>
+        <center>
+            <h2>Почему именно мы?</h2>
+        </center>
+        <div class="features">
+            <div class="features_item">
+                <img class="features_icon" src="features1.png">
+                <h4 class="features_title">Собственное производство</h4>
+                <div class="features_text">Стоимость конструкций напрямую от производителя</div>
+            </div>
+            <div class="features_item">
+                <img class="features_icon" src="features3.png">
+                <h4 class="features_title">Сроки</h4>
+                <div class="features_text">Строим дома точно в оговоренный срок</div>
+            </div>
+            <div class="features_item">
+                <img class="features_icon" src="features4.png">
+                <h4 class="features_title">С ЗАБОТОЙ О ВАШЕМ ЗДОРОВЬЕ</h4>
+                <div class="features_text">Используем экологически чистые материалы</div>
+            </div>
+            <div class="features_item">
+                <img class="features_icon" src="features4.png">
+                <h4 class="features_title">С ЗАБОТОЙ О ВАШЕМ ЗДОРОВЬЕ</h4>
+                <div class="features_text">Используем экологически чистые материалы</div>
+            </div>
+        </div>
+    </div>
+    <div class="rerut">
+        <div class="container1">
+            <h2 class="catalog_title" id='work'>Лидеры продаж</h2>
+            <section class="project" id="project">
+                <div class="content">
+                    <div class="workBox">
+
+                        <div class="imgBox">
+                            <img src="houses/pic1.jpg" alt="waterfront">
+                        </div>
+                        <div class="textBox">
+                            <h3> Лучший вариант для тебя и семьи</h3>
+
+                        </div>
+                    </div>
+
+                    <div class="workBox">
+                        <div class="imgBox">
+                            <img src="houses/pic2.jpg" alt="waterfront">
+                        </div>
+                        <div class="textBox">
+                            <h3>Огромный дом для большой компании</h3>
+                        </div>
+                    </div>
+
+                    <div class="workBox">
+                        <div class="imgBox">
+                            <img src="houses/pic3.png" alt="waterfront">
+                        </div>
+                        <div class="textBox">
+                            <h3>Люксовое помещение для отдыха среди леса</h3>
+                        </div>
+                    </div>
+
+                    <div class="workBox">
+                        <div class="imgBox">
+                            <img src="houses/pic4.jpg" alt="waterfront">
+                        </div>
+                        <div class="textBox">
+                            <h3>Маленький уютный домик</h3>
+                        </div>
+                    </div>
+
+                    <div class="workBox">
+                        <div class="imgBox">
+                            <img src="houses/pic5.jpg" alt="waterfront">
+                        </div>
+                        <div class="textBox">
+                            <h3>Дорогой дом в джунглях</h3>
+                        </div>
+                    </div>
+
+                    <div class="workBox">
+                        <div class="imgBox">
+                            <img src="houses/pic6.jpg" alt="waterfront">
+                        </div>
+                        <div class="textBox">
+                            <h3>Высокий дом для двоих</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <button class="butt">Смотреть все наши проекты</button>
+        </div>
+    </div>
+    </div>
+    <form>
+        <h1 class="formh" id='formh'>Регистрация и вход в аккаунт</h1>
+        <fieldset>
+            <input class="regu" type="text" value="First Name">
+            <input class="regu" type="text" value="Surname">
+            <input class="regu" type="text" value="Email Address">
+            <input class="regu" type="text" value="Mobile Phone">
+            <input class="regu" type="text" value="Message">
+            <input class='send34' type='button' name='send1' value="Зарегистрироваться" onclick="fun1()">
+        </fieldset>
+    </form>
+    <h1 class="titlesli" id='build'>Как мы строим наши дома</h1>
+    <div class="container2">
+        <h2 class="slider_title">
+            Этот каркасный дом мы построили осенью 2017 года по типовому проекту с небольшими доработками под
+            потребности клиента.
+
+            За основу взят проект дома №126 из нашего каталога.
+
+            В доме предусмотрена кухня-гостиная, две спальни, санузел.
+
+            Свайно-винтовой фундамент возведен силами компании-партнеров.
+
+            Материал стен первого этажа – каркас из доски камерной сушки 40х150 мм, внешняя отделка дома имитация бруса,
+            внутренняя отделка вагонка.
+
+            Окна двухкамерные стеклопакеты.
+
+            Кровля – двухскатная, в качестве кровельного материала использована металлочерепица производства
+            МЕТАЛЛПРОФИЛЬ.</h2>
+        <div class="content23">
+            <img class="slider_prev" src="houses/b2f5c6ac413f5f6cad0ee6b741d08dce.png">
+            <img class="slider_next" src="houses/next.png">
+
+            <div class="slider">
+
+                <div class="slider_line">
+                    <img class="slider_pic" src="houses/1.jpg" alt="">
+                    <img class="slider_pic" src="houses/2.jpg" alt="">
+                    <img class="slider_pic" src="houses/3.jpg" alt="">
+                    <img class="slider_pic" src="houses/4.jpg" alt="">
+                    <img class="slider_pic" src="houses/5.jpg" alt="">
+                    <img class="slider_pic" src="houses/6.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container4"></div>
+    <h2 class="slider_title1">Дом из сухого профилированного бруса мы построили зимой 2018. Проект разработали с нуля
+        наш проектировщик по эскизам Заказчика.
+
+        Дом предназначен для летнего отдыха с возможностью бывать в нем зимой на выходных.
+
+        Сейчас Заказчик проживает в Мурманске, в ближайшее время дом планируется использовать как место, где будет
+        проводиться отпуск. В будущем возможен переезд в дом на постоянное место жительство.
+
+        В доме предусмотрена просторная гостиная со вторым светом и оригинальным лофтом, кухня, спальня, просторный
+        санузел, котельная, небольшой кабинет на мансарде и там же еще одна спальня.
+
+        Свайно-винтовой фундамент из 29 свай возведен силами компании-партнеров.
+
+        Материал стен первого этажа – профилированный брус камерной сушки 135х135 мм, материал перегородок
+        профилированный брус камерной сушки 90х135 мм.
+
+        Второй этаж каркасный с утеплением базальтовой плитой ROCKWOOL.
+
+        Окна двухкамерные стеклопакеты.
+
+        Кровля – многощипцовая, в качестве кровельного материала использована металлочерепица производства
+        МЕТАЛЛПРОФИЛЬ.</h2>
+    <img class="slider_prev1" src="houses/b2f5c6ac413f5f6cad0ee6b741d08dce.png" alt="">
+    <img class="slider_next1" src="houses/next.png" alt="">
+    <div class="slider1">
+
+        <div class="slider_line1">
+
+            <img class="slider_pic1" src="houses/7.jpg" alt="">
+            <img class="slider_pic1" src="houses/14.png" alt="">
+            <img class="slider_pic1" src="houses/15.png" alt="">
+            <img class="slider_pic1" src="houses/16.png" alt="">
+            <img class="slider_pic1" src="houses/17.jpg" alt="">
+            <img class="slider_pic1" src="houses/8.jpg" alt="">
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

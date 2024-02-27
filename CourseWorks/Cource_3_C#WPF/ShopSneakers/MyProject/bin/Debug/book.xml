@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<Items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <list>
+    <Item>
+      <Name>Nike</Name>
+      <FullName>Air Force 1</FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\krossovki-nike-air-force-1-07-lv8-da8481-100-7-1000x800.jpg</Image>
+      <Category>Fashion</Category>
+      <Rate>4.5</Rate>
+      <Size>44</Size>
+      <Count>10</Count>
+      <Price>500</Price>
+    </Item>
+    <Item>
+      <Name>Puma </Name>
+      <FullName>RS-X</FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\krossovki-puma-rs-x-reinvention-369579-13-5-1000x800.jpg</Image>
+      <Category>Basketball</Category>
+      <Rate>4.2</Rate>
+      <Size>42</Size>
+      <Count>25</Count>
+      <Price>350</Price>
+    </Item>
+    <Item>
+      <Name>Saucony</Name>
+      <FullName>Classic</FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\107017424.jpg</Image>
+      <Category>Casual</Category>
+      <Rate>3.1</Rate>
+      <Size>40</Size>
+      <Count>15</Count>
+      <Price>228</Price>
+    </Item>
+    <Item>
+      <Name>Adidas</Name>
+      <FullName>Forum 1</FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\490-490_ID6857.jpg</Image>
+      <Category>Running</Category>
+      <Rate>4.7</Rate>
+      <Size>43</Size>
+      <Count>2</Count>
+      <Price>654</Price>
+    </Item>
+    <Item>
+      <Name>Balenciaga</Name>
+      <FullName>Triple S</FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\s-l1600.jpg</Image>
+      <Category>Fashion</Category>
+      <Rate>5</Rate>
+      <Size>45</Size>
+      <Count>1</Count>
+      <Price>800</Price>
+    </Item>
+    <Item>
+      <Name>Fila</Name>
+      <FullName>Escobar</FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\krossovki-fila-disruptor-ii-1fm01dr2-001-8-1000x800.jpg</Image>
+      <Category>Running</Category>
+      <Rate>2.5</Rate>
+      <Size>39</Size>
+      <Count>40</Count>
+      <Price>150</Price>
+    </Item>
+    <Item>
+      <Name>Nike </Name>
+      <FullName>React </FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\originalnye-krossovki-nike-react-element-55-bq6166-003-0-35842725172719_small11.jpg</Image>
+      <Category>Basketball</Category>
+      <Rate>4.9</Rate>
+      <Size>42</Size>
+      <Count>7</Count>
+      <Price>599</Price>
+    </Item>
+    <Item>
+      <Name>Asics</Name>
+      <FullName>Tiger</FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\5c7708cf53214.jpg</Image>
+      <Category>Casual</Category>
+      <Rate>3.7</Rate>
+      <Size>44</Size>
+      <Count>20</Count>
+      <Price>355</Price>
+    </Item>
+    <Item>
+      <Name>New Balance</Name>
+      <FullName>574</FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\Без названия (1).jpg</Image>
+      <Category>Running</Category>
+      <Rate>4.3</Rate>
+      <Size>42</Size>
+      <Count>10</Count>
+      <Price>300</Price>
+    </Item>
+    <Item>
+      <Name>Adidas</Name>
+      <FullName>ZX Torsion</FullName>
+      <Image>C:\Users\Asus\OneDrive\Рабочий стол\42_adidas_zx_torsion_black.jpg</Image>
+      <Category>Fashion</Category>
+      <Rate>4.8</Rate>
+      <Size>43</Size>
+      <Count>55</Count>
+      <Price>670</Price>
+    </Item>
+  </list>
+</Items>

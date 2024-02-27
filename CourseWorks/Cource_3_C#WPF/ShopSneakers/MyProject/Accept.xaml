@@ -1,0 +1,32 @@
+﻿<Window WindowStartupLocation="CenterScreen" ResizeMode="NoResize" x:Class="MyProject.Accept"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyProject"
+        mc:Ignorable="d"
+        Title="Accept" Height="150" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="75*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2">
+        <TextBlock Text="{DynamicResource accept}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="164,34,0,0" Height="16" Width="72" Grid.ColumnSpan="2" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Border Background="GreenYellow" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,0">
+                <Button Content="{DynamicResource yes}" Background="Transparent" BorderThickness="0" Click="Button_Click_2"/>
+            </Border>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Border Background="Red" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="{DynamicResource no}" Background="Transparent" BorderThickness="0" Click="Button_Click" />
+            </Border>
+        </StackPanel>
+    </Grid>
+</Window>
