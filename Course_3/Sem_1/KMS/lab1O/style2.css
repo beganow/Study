@@ -1,0 +1,87 @@
+.dialog {
+    position: fixed;
+    top: 10%;
+    left: 99%;
+    width: 800px;
+    height: 700px;
+    margin-left: -25px;
+    margin-top: -25px;
+    padding: 10px;
+    border: #000 2px solid;
+    border-radius: 10px;
+    background: #fff;
+    color: purple;
+    z-index: 1500;
+    font-size: 12pt;
+}
+
+.dialog .label {
+    transform: rotate(270deg);
+    width: 430px;
+    height: 20px;
+    text-align: center;
+    color: purple;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: -26%;
+    margin-top: 50%;
+    cursor: pointer;
+}
+
+.dialog .header {
+    text-align: center;
+    margin-top: -400px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.dialog .history {
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.dialog .history .question {
+    margin-left: 40px;
+    background: gray;
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.dialog input,
+.dialog button,
+.dialog .history {
+    margin: 2px 55px;
+    width: 85%;
+    border: 1px #666 solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.dialog .history .question {
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 40px;
+    background: gray;
+}
+
+.dialog .history .answer {
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 40px;
+    background: green;
+}
+
+.dialog .history .answer img,
+.dialog .history .answer audio,
+.dialog .history .answer video {
+    cursor: pointer;
+    display: block;
+    max-width: 650px;
+}
