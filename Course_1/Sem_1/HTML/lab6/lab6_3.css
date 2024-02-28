@@ -1,0 +1,36 @@
+   .d1{
+    background-image: linear-gradient(to top, red, blue);
+    height: 100px;
+    width: 100px;
+    margin:10px;
+    }
+    .d2{
+    background-image: repeating-linear-gradient(45deg, red, red 6px, blue 6px, blue 13px);
+    height: 100px;
+    width: 100px;
+    margin:10px;
+    }
+    .d3{
+    background-image: radial-gradient(circle, yellow, green);
+    height: 100px;
+    width: 100px;
+    margin:10px;
+    }
+    .d4{
+    background-image: repeating-radial-gradient(circle, green, green 6px, yellow 6px, yellow 12px);
+    height: 100px;
+    width: 100px;
+    margin:10px;
+    }
+    .d5{
+    background:radial-gradient(circle, yellow 5%,green 55%,transparent),linear-gradient(to bottom, blue,purple);
+    height: 100px;
+    width: 100px;
+    margin:10px;
+    }
+    .d6{
+    background:linear-gradient(to right, yellow 5%,green 45%,transparent),linear-gradient(to bottom, black 15%,grey 40%,white 55%,blue 70%,purple 85%);
+    height: 100px;
+    width: 100px;
+    margin:10px;
+}

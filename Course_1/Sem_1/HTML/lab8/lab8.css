@@ -1,0 +1,75 @@
+
+.pogydo{
+    float: left;
+    background-color: grey;
+    width: 400px;
+    height: 1000px;
+    text-align: center;
+}
+.h{
+    text-align: center;
+    background-color: red;
+}
+ul.nav {
+    list-style-type: none;
+}
+ul.nav a {
+       display:inline-block;
+       padding-top: 50px;
+        } 
+.ruru{
+     color:red;
+}
+.ruru:link{
+    text-decoration: none;
+}
+.tt{
+    color: #000;
+}
+.tt:visited{
+    color:#8B0000;
+}
+.mm:hover{
+    color:green;
+}
+.ss:active{
+    color:rgb(184, 134, 11);
+}
+img{
+    height: 200px;
+    width: 200px;
+    margin-top:25px;
+    margin-left: 25px;
+}
+.form1:hover{
+    transform: scale(0.5);
+}
+.form2:hover{
+    transform: rotate(45deg);
+}
+.form3:hover{
+    transform: translate(50px);
+}
+.form4:hover{
+    transform: rotate(-20deg);
+}
+
+ul.opo{
+    list-style-type: none;
+    margin-left: 35%;
+    margin-top: 30px;
+}
+.opo li { display: inline;
+     float: left; }
+.opo a {
+    display: inline-block; /*для плавающих элементов значение block*/
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    background-color: yellow;
+    text-decoration: none;
+    color: green;
+    font-size: 20px;
+    padding: 10px;
+    }
+    
+

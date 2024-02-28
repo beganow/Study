@@ -1,0 +1,62 @@
+SPECIALIZATION
+{ display:block;
+ font-size:40px;
+text-align:center;
+margin:10px 20px 10px 20px;
+margin-top:12pt;
+color:cyan;
+border-style: dashed;
+border-color:orange;}
+NAME
+{ 
+    display: block;
+    margin: auto;
+    width: 1100px;
+    border: 4px double red;
+    font-weight: bold;
+    font-size: 20px;
+    color:chartreuse;
+    font-style:italic;
+    text-align:center;
+}
+EXAM
+{   display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 900px;
+    border:2px groove brown;
+     display:block;
+    text-align:center;
+}
+TIME{
+    
+    display: block;
+    
+    width: 850px;
+    margin:auto;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px dashed rgb(170, 3, 72);
+}
+PAGES
+{   display: block;
+    margin: auto;
+    width: 700px;
+    margin-top: 10px;
+    border:2px inset lightsalmon;
+    display:block;
+text-align:center;
+}
+PASSING
+{ display:block;
+    margin: auto;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+text-align:center;
+border: 2px ridge lime;
+}
+FACULTY
+{ display:block;
+margin:50px 100px;
+ border:15px solid blue}

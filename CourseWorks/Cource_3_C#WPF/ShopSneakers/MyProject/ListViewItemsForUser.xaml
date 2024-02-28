@@ -1,0 +1,207 @@
+﻿<Window x:Class="MyProject.ListViewItemsForUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyProject"
+        mc:Ignorable="d"
+          Title="ListViewItemsForUser" Height="600" Width="1100" MinHeight="600" MinWidth="1100"
+    WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Window.Resources>
+        <Style x:Key="Search" TargetType="TextBox">
+            <Setter Property="Background" Value="DarkGray"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Text"  Value="Search"/>
+
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid x:Name="main" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" SnapsToDevicePixels="True">
+                            <Border x:Name="Background" BorderThickness="5" CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"/>
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                          BorderThickness="0"
+                                          Padding="{TemplateBinding Padding}"
+                                          IsTabStop="False"
+                                          Background="{x:Null}"
+                                          TextElement.Foreground="{TemplateBinding Foreground}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+        <Style x:Key="buttonst" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Background" Value="Wheat"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" BorderThickness="0" BorderBrush="Black" CornerRadius="20" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,10,0"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="Black"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Style="{DynamicResource GridTheme}">
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="427*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="210"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Height="40" Margin="0,0,0,35" Width="80" HorizontalAlignment="Left">
+            <MenuItem Header="{DynamicResource steps}" Margin="5,-3,5,0">
+                <MenuItem Header="{DynamicResource DeleteMe}" Click="Delete_Account"/>
+                <MenuItem Header="{DynamicResource EditMe}" Click="Update_Account"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="0"  Margin="0,20,0,0">
+            <TextBlock x:Name="NameApp" Text="SneakersShop" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="30" Foreground="White" FontWeight="Bold"  />
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <TextBox x:Name="SearchBox"  Style="{StaticResource Search}" Margin="40,0,0,0" HorizontalAlignment="Left" FontSize="25" TextAlignment="Left" Padding="20,2,0,0" TextChanged="SearchBox_TextChanged"/>
+            <Slider x:Name="SliderBox" Minimum="0" Maximum="1000" Value="0" Width="150" Background="DarkGray" Height="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="100,0,0,5" ValueChanged="SliderBox_ValueChanged"/>
+            <TextBox x:Name="PriceBar" Width="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="40" Margin="300,0,0,5" TextChanged="PriceBar_TextChanged" />
+            <ComboBox x:Name="ComboCat" Text="Category"   Width="150" Height="40" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="600,0,40,0" SelectionChanged="ComboCat_SelectionChanged"  >
+                <ComboBoxItem Content="{DynamicResource all}"/>
+                <ComboBoxItem Content="{DynamicResource running}"/>
+                <ComboBoxItem Content="{DynamicResource casual}"/>
+                <ComboBoxItem Content="{DynamicResource Fashion}"/>
+                <ComboBoxItem Content="{DynamicResource Basketball}"/>
+            </ComboBox>
+        </Grid>
+        <ScrollViewer x:Name="Scroll" Grid.Column="1" Grid.Row="1" >
+            <StackPanel>
+                <TextBlock x:Name="titleitems" Text="{DynamicResource assort}" FontSize="30" Margin="10" Foreground="White" FontWeight="Medium" Visibility="Hidden"/>
+                <StackPanel Margin="20 0">
+                    <ItemsControl x:Name="ListViewSneakers" ItemsSource="{Binding Item}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border  Margin="10" Width="250" >
+                                    <StackPanel>
+                                        <Border Width="223" Height="200" CornerRadius="20" Margin="5">
+                                            <Border.Background>
+                                                <ImageBrush ImageSource="{Binding Image}"/>
+                                            </Border.Background>
+                                        </Border>
+                                        <TextBlock HorizontalAlignment="Center"    Text="{Binding Name}" FontSize="20"  />
+                                        <TextBlock  HorizontalAlignment="Center" Text="{Binding FullName}" FontSize="18" FontWeight="Bold" />
+                                        <Grid Margin="15,0,0,0">
+                                            <TextBlock HorizontalAlignment="Left" Text="{DynamicResource Category}" FontWeight="Medium" FontSize="18"/>
+                                            <TextBlock HorizontalAlignment="Center" Text="{Binding Category}" FontSize="18"/>
+                                        </Grid>
+                                        <Grid Margin="15,0,0,0">
+                                            <TextBlock HorizontalAlignment="Left" Text="{DynamicResource Rate}" FontWeight="Medium" FontSize="18"/>
+                                            <TextBlock HorizontalAlignment="Center" Text="{Binding Rate}" FontSize="18"/>
+                                        </Grid>
+                                        <Grid Margin="15,0,0,0">
+                                            <TextBlock HorizontalAlignment="Left" Text="{DynamicResource Size}" FontWeight="Medium" FontSize="18"/>
+                                            <TextBlock HorizontalAlignment="Center" Text="{Binding Size}" FontSize="18"/>
+                                        </Grid>
+                                        <Grid Margin="15,0,0,0">
+                                            <TextBlock HorizontalAlignment="Left" Text="{DynamicResource Count}" FontWeight="Medium" FontSize="18"/>
+                                            <TextBlock HorizontalAlignment="Center" Text="{Binding Count}" FontSize="18"/>
+                                        </Grid>
+                                        <Grid Margin="15,0,0,0">
+                                            <TextBlock HorizontalAlignment="Left" Text="{DynamicResource Price}" FontWeight="Medium" FontSize="18"/>
+                                            <TextBlock HorizontalAlignment="Center" Text="{Binding Price}" FontSize="18"/>
+                                        </Grid>
+                                        <Grid Margin="0,20,0,0" >
+                                            <Border Width="223" Height="50" HorizontalAlignment="Center">
+                                                <Button x:Name="Buy" Background="Yellow" Content="{DynamicResource Buy}" Foreground="Black" Click="Buy_Click"/>
+                                            </Border>
+                                        </Grid>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Image x:Name="PicHolder" Grid.Column="2" Grid.Row="2" Source="1.jpg" Stretch="Fill"/>
+        <Button x:Name="leftHolder" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"  Click="GoNext" Width="50" Height="50" BorderThickness="0">
+            <Image Source="left.png"></Image>
+        </Button>
+        <Button x:Name="rigthHolder" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center"  Click="GoNext" Width="50" Height="50" BorderThickness="0">
+            <Image Source="right.png"></Image>
+        </Button>
+        <Border x:Name="BorderDataGrid" BorderBrush="#CCCCCC" Grid.Column="2" Grid.Row="2"  BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,10,0" CornerRadius="10"  Width="865"  Height="500" Background="Black"  Visibility="Collapsed">
+            <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" Grid.Column="2" Grid.Row="2" Width="840" Height="400" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,80" Visibility="Visible"  CanUserAddRows="False" >
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Width="45" IsReadOnly="True" Binding="{Binding Name}" />
+                    <DataGridTextColumn Header="Full Name" Width="80" IsReadOnly="True" Binding="{Binding Full_Name}" />
+                    <DataGridTextColumn Header="Category" Width="60" IsReadOnly="True" Binding="{Binding Category}" />
+                    <DataGridTextColumn Header="Size" Width="35" IsReadOnly="True"  Binding="{Binding Size}" />
+                    <DataGridTextColumn Header="Address" Width="120" IsReadOnly="True" Binding="{Binding User_Address}" />
+                    <DataGridTextColumn Header="Order Date" Width="120" IsReadOnly="True" Binding="{Binding Order_Date}" />
+                    <DataGridTextColumn Header="Date Delivery" Width="120" IsReadOnly="True" Binding="{Binding Date_Delivery}" />
+                    <DataGridTextColumn Header="Status" Width="80" IsReadOnly="True" Binding="{Binding Status_Name}" />
+                    <DataGridTextColumn Header="Payment" Width="55" IsReadOnly="True" Binding="{Binding Payment_Method}" />
+                    <DataGridTextColumn Header="Price" Width="80" IsReadOnly="True" Binding="{Binding Price}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+        <Border x:Name="DataButton" Grid.Column="2" Grid.Row="2" Width="200" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,50" Background="Lime" CornerRadius="15" Visibility="Collapsed">
+            <Button Content="Обновить" FontSize="20" VerticalAlignment="Center" Background="Transparent" BorderThickness="0" />
+        </Border>
+        <Grid x:Name="UserInfo" Grid.Column="0" Grid.Row="1" Visibility="Visible">
+            <Image  Width="100" Height="100" Source="/user.png" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+            <TextBlock x:Name="NameAdmin" Text="" HorizontalAlignment="Right" FontSize="18" Margin="0,10,10,0" VerticalAlignment="Top" Width="100"/>
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="140*"/>
+                    <RowDefinition Height="110*"/>
+                    <RowDefinition Height="110*"/>
+                    <RowDefinition Height="110*"/>
+                    <RowDefinition Height="110*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="1" Grid.Column="0" BorderThickness="1" Margin="10,30">
+                    <Button Content="{DynamicResource home}" FontSize="20" Style="{StaticResource buttonst}" Click="Button_Click_2" >
+                    </Button>
+                </Border>
+                <Border  Grid.Row="2" Grid.Column="0" BorderThickness="1" Margin="10,30">
+                    <Button Content="{DynamicResource product}" FontSize="20" Style="{StaticResource buttonst}" Click="Button_Click_1"/>
+                </Border>
+                <Border  Grid.Row="3" Grid.Column="0" BorderThickness="1" Margin="10,30">
+                    <Button Content="{DynamicResource History}" FontSize="20" Style="{StaticResource buttonst}" Click="Button_Click_4"/>
+                </Border>
+                <Border  Grid.Row="4" Grid.Column="0"  BorderThickness="1" Margin="10,30">
+                    <Button Content="{DynamicResource logout}" FontSize="20" Style="{StaticResource buttonst}" Click="Button_Click"/>
+                </Border>
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Window>

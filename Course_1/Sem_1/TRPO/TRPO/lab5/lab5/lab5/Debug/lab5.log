@@ -1,0 +1,3 @@
+﻿  lab5.cpp
+D:\Лаба Наркевич\lab5\lab5\lab5\lab5.cpp(39,17): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  lab5.vcxproj -> D:\Лаба Наркевич\lab5\lab5\Debug\lab5.exe

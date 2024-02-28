@@ -1,0 +1,3 @@
+﻿  lab17_1.cpp
+D:\Лаба Белодед\lab17_1\lab17_1\lab17_1.cpp(31,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  lab17_1.vcxproj -> D:\Лаба Белодед\lab17_1\Debug\lab17_1.exe

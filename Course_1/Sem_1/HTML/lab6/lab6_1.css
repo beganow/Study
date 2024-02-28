@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+.uu{list-style: none; 
+    background: url(heart.jpg) no-repeat 0 2px; 
+    padding-left: 25px; 
+}
+table{
+    border:2px solid;
+    border-collapse: collapse;
+    width:500px;
+    height:400px;
+}
+td,th{
+    border: 2px solid;
+}
+.oo{
+    float: left;
+    margin:0;
+    padding: 0;
+    height: 250px;
+}
+.tt{
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+}
+h3,h4,h5{
+    margin:0;
+    padding:0;
+}
+body{
+    background: url(bgtufit.jpg) ;
+    background-position: top right;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}

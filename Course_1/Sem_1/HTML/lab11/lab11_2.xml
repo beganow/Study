@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="lab11_1.css"?>
+<!DOCTYPE FACULTY [
+<!ELEMENT note (SPECIALIZATION, NAME, EXAM, PAGES, PASSING)>
+<!ELEMENT SPECIALIZATION (#PCDATA)>
+<!ELEMENT NAME (#PCDATA)>
+<!ELEMENT EXAM (#PCDATA)>
+<!ELEMENT PAGES (#PCDATA)>
+<!ELEMENT PASSING (#PCDATA)>
+<!ENTITY time "Лет обучения 4 года">
+<!ENTITY time1 "Лет обучения 5 лет">
+]>
+<FACULTY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index3.xsd">
+<SPECIALIZATION>ISIT</SPECIALIZATION>
+<NAME>Pavel</NAME>
+<EXAM>XML</EXAM>
+<TIME>&time;</TIME>
+<PAGES>20pg</PAGES>
+<PASSING>300ball</PASSING>
+<SPECIALIZATION>BT</SPECIALIZATION>
+<NAME>Igor</NAME>
+<EXAM>Chemical</EXAM>
+<TIME>&time1;</TIME>
+<PAGES>40pg</PAGES>
+<PASSING>200ball</PASSING>
+<div></div>
+</FACULTY>

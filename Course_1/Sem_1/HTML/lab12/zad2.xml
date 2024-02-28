@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="zad2.xsl"?>
+<catalog>
+	<cd>
+		<name>Слава</name>
+		<mark>9</mark>
+	</cd>
+	<cd>
+		<name>Антон</name>
+		<mark>10</mark>
+	</cd>
+	<cd>
+		<name>Игорь</name>
+		<mark>7</mark>
+	</cd>
+	<cd>
+		<name>Алина</name>
+		<mark>5</mark>
+	</cd>
+	<cd>
+		<name>Настя</name>
+		<mark>3</mark>
+	</cd>
+	<cd>
+		<name>Инокентий</name>
+		<mark>1</mark>
+	</cd>
+</catalog>

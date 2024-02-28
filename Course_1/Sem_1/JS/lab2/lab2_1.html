@@ -1,0 +1,155 @@
+<!Doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <script type='text/javascript'>
+    function fun1() {
+         alert('Вас приветствует учебный центр');
+      }
+      function fun2() {
+         let x = prompt('Введите Ваше имя:', 'Имя');
+         alert('Добро пожаловать на наши курсы, ' + x);
+      }
+      function fun3() {
+         if (confirm("Хотите стать Web-дизайнером?"))
+            alert('Учите стили CSS и JavaScript!')
+         else alert('Упускаете время!')
+      }
+      function addition() {
+            let f = +prompt("введите первое число");
+            let l = +prompt("введите второе число");
+            let res = f + l;
+            alert(res);
+        }
+        function fun4() {
+            let x = prompt("введите первую строку");
+            let y = prompt("введите вторую строку");
+            let c = x + y;
+            alert(c);
+        }
+        function fun5() {
+            let r = +prompt("введите число");
+            let e = prompt("введите строку");
+            let res1 = r + e;
+            alert(res1);
+        }
+        function fun6() {
+            let k = prompt("введите строку");
+            let m = +prompt("введите число");
+            let res1 = k + m;
+            alert(res1);
+        }
+        function fun7() {
+            alert("Строка");
+        }
+        function fun8() {
+        const x = 76;
+        const y = 931;
+        let c = (35 * y - 25 * x) / 5 + 232;
+        let m = (8 * y / x + 5 * x / y - 43) * 6;
+        let k = Math.trunc(c / m) // выделяет целую часть путём удаления всех дробных знаков 
+        let r = c - (k * m);
+        alert(c.toFixed(0));
+        document.write("Значение первого выражения=", c.toFixed(0));
+        alert(m.toFixed(0));
+        document.write("<br>Значение второго выражения=", m.toFixed(0));
+        alert(r.toFixed(0));
+        document.write("<br>Остаток от деления двух выражений=", r.toFixed(0));
+        }
+        function fun11() {
+            let x = +prompt("введите любое число число");
+            if (((x < 20) || (x > 40)) && ((x != 15) && (x % 5 == 0)))
+                alert('Правильное значение')
+            else
+                alert('Не правильное значение')
+        }
+        function fun12() {
+            let a = +prompt("Введите первое число");
+            let b = +prompt("Введите второе число");
+            if (a > b)
+                alert("A больше B")
+            else
+                alert("B больше A")
+        }
+        function fun13() {
+            let m = +prompt("Введите первое число");
+            let n = +prompt("Введите второе число");
+            if ((m > n) && (m % 2 == 0))
+                alert("M больше N и является четным")
+            else
+                alert("M меньше N")
+        }
+        function fun14() {
+            let x = prompt("введите дату месяца");
+            switch (x) {
+                case "1": alert("Среда"); break;
+                case "2": alert("Четверг"); break;
+                case "3": alert("Пятница"); break;
+                case "4": alert("Суббота"); break;
+                case "5": alert("Воскресенье"); break;
+                case "6": alert("Понедельник"); break;
+                case "7": alert("Вторник"); break;
+                case "8": alert("Среда"); break;
+                case "9": alert("Четверг"); break;
+                case "10": alert("Пятница"); break;
+                case "11": alert("Суббота"); break;
+                case "12": alert("Воскресенье"); break;
+                case "13": alert("Понедельник"); break;
+                case "14": alert("Вторник"); break;
+                case "15": alert("Среда"); break;
+                case "16": alert("Четверг"); break;
+                case "17": alert("Пятница"); break;
+                case "18": alert("Суббота"); break;
+                case "19": alert("Воскресенье"); break;
+                case "20": alert("Понедельник"); break;
+                case "21": alert("Вторник"); break;
+                case "22": alert("Среда"); break;
+                case "23": alert("Четверг"); break;
+                case "24": alert("Пятница"); break;
+                case "25": alert("Суббота"); break;
+                case "26": alert("Воскресенье"); break;
+                case "27": alert("Понедельник"); break;
+                case "28": alert("Вторник"); break;
+                case "29": alert("Среда"); break;
+                case "30": alert("Четверг"); break;
+                default: alert("Неверные данные");
+            }
+        }
+        function fan23(){
+            try{
+            let a = Pavel.kur(data);
+            alert(user.name);
+            }
+                catch(a){
+                alert('Извините, ошибка при заполнении данных');  
+                alert('Ошибка 404: проверьте подключение к интернету'); 
+                }
+}
+    </script>
+    <style>
+        table{
+            border-spacing: 50px;
+            background-color: blue;
+            
+        }
+    </style>
+</head>
+    <body>
+        <table><tr><td><input type='button' value='Вас приветствует учебный центр' onclick='fun1()' /></td>
+        <td><input type='button' value='Имя' onclick='fun2()' /></td>
+        <td><input type='button' value='Хотите стать Web-дизайнером?' onclick='fun3()' /></td></tr>
+
+        <tr><td> <input type='button' value='Сумма чисел' onclick='addition()' /></td>
+        <td><input type='button' value='Сумма строк' onclick='fun4()' /></td>
+        <td><input type='button' value='Сумма числа и строки' onclick='fun5()' /></td></tr>
+        <tr><td><input type='button' value='Сумма строки и числа' onclick='fun6()' /></td>
+        <td><input type='button' value="Результатом сложения строки и числа всегда будет..." onclick='fun7()' /></td>
+        <td><input type='button' value='задание 3' onclick='fun8()' /></td></tr>
+        <tr><td><input type='button' value='Введите число' onclick='fun11()' /></td>
+        <td><input type='button' value='пример 1' onclick='fun12()' /></td>
+        <td><input type='button' value='пример 2' onclick='fun13()' /></td></tr>
+        <tr><td><input type='button' value='Определение дня недели' onclick='fun14()' /></td>
+        <td><input type="button" value="Проанализировать код" onclick="fan23()" /></td></tr>
+    </table>
+</body>
+</html>

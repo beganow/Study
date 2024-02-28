@@ -1,0 +1,3 @@
+﻿  task2.cpp
+D:\Лабы\Лаба C++\Белодед\сем 2\lab1\task2\task2.cpp(6,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  task2.vcxproj -> D:\Лабы\Лаба C++\Белодед\сем 2\lab1\Debug\task2.exe

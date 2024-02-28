@@ -1,0 +1,15 @@
+Andrei
+Ivanov
+Programmer
+1200
+12.06.2003
+Boris
+Knyzev
+Forester
+2300
+25.05.2007
+Ruslan
+Boitsov
+Cassier
+500
+23.06.2000

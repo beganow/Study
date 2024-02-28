@@ -1,0 +1,4 @@
+﻿  ConsoleApplication3.cpp
+D:\СД\lab2\lab2\ConsoleApplication3\ConsoleApplication3.cpp(145,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+D:\СД\lab2\lab2\ConsoleApplication3\ConsoleApplication3.cpp(147,6): warning C4101: n: неиспользованная локальная переменная
+  ConsoleApplication3.vcxproj -> D:\СД\lab2\lab2\Debug\ConsoleApplication3.exe

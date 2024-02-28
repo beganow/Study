@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Лабораторная 4. Задание 2</title>
+        <style>
+            body{
+                background-color: chartreuse;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+            <script>
+                function Student(name,surname,phythics, mathematic, IT ){
+                    alert(name+' '+surname);
+                    this.name=name;
+                    this.surname=surname;
+                    this.phythics=phythics;
+                    this.mathematic=mathematic;
+                    this.IT=IT;
+                }
+                Student.prototype.srball=this.srball;
+                Student.prototype.age=this.age;
+                st1=new Student('Pavel','Obodov', 10 , 9 , 6);
+                st1.srball=((10+9+6)/3);
+                st1.age=18;
+                document.write(st1.name+' '+st1.surname+' '+st1.srball.toFixed(2)+' '+'<br></br>Возраст:'+st1.age);
+                document.write('<br></br>')
+                st2=new Student('Mark', 'Kozlov', 5, 8 , 3);
+                st2.srball=((5+8+3)/3);
+                st2.age=16;
+                document.write('<br>'+st2.name+' '+st2.surname+' '+st2.srball.toFixed(2)+' '+'<br></br>Возраст:'+st2.age);
+                document.write('<br></br>')
+                st3=new Student('Alesya', 'Osmolovskaya', 9 , 8 , 2);
+                st3.srball=((9+8+2)/3);
+                st3.age=14;
+                document.write('<br>'+st3.name+' '+st3.surname+' '+st3.srball.toFixed(2)+' '+'<br></br>Возраст:'+st3.age);
+                document.write('<br></br>')
+                st4=new Student('Katerina', 'Rogozova', 7, 6, 3);
+                st4.srball=((7+6+3)/3);
+                st4.age=17;
+                document.write('<br>'+st4.name+' '+st4.surname+' '+st4.srball.toFixed(2)+' '+'<br></br>Возраст:'+st4.age);
+                document.write('<br></br>');
+                document.write('surname' in st4);
+                document.write('<br></br>');
+                document.write('srball' in st3);
+                document.write('<br></br>')
+                document.write(typeof st1.name);
+                document.write('<br></br>');
+                document.write(typeof st1.surname);
+                document.write('<br></br>');
+                document.write(typeof st1.phythics);
+                document.write('<br></br>');
+                document.write(typeof st1.mathematic);
+                document.write('<br></br>');
+                document.write(typeof st1.IT);
+                document.write('<br></br>');
+                document.write(typeof st1.age);
+                document.write('<br>');
+            </script>
+    </body>
+</html>

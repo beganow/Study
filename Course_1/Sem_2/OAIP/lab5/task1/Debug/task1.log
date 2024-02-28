@@ -1,0 +1,3 @@
+﻿  task1.cpp
+D:\Лабы\Лаба C++\Белодед\сем 2\lab5\task1\task1.cpp(18,20): warning C4305: =: усечение из "double" в "float"
+  task1.vcxproj -> D:\Лабы\Лаба C++\Белодед\сем 2\lab5\Debug\task1.exe

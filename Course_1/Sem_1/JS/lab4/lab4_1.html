@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Лабораторная 4.Задание 1</title>
+        <style>
+            body{
+                border-spacing:50px;
+                text-align: center;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+        function Gruppa(n,spec,kolich) {
+        this.n=n;
+        this.spec=spec;
+        this.kolich=kolich;
+        this.add_stud=function add_stud(k) {
+        this.kolich+=k;
+        document.write('<br>В группу ' + this.n + ' добавили'+ " "+  k +" " + 'студентов.');
+        }
+        this.sub_stud=function sub_stud(i){
+        this.kolich-=i;
+        document.write('<br>Из группы ' + this.n + ' исключили '+ " "+  i  +" " + 'студентов.' );
+        }
+}
+        Gruppa.prototype.kurs=this.kurs
+        gr1=new Gruppa(2 ,' ИСиТ ', 28);
+        gr1.add_stud(3);
+        gr1.kurs = 1;
+        gr1.sub_stud(1);
+        document.write("<br>"+ gr1.n, gr1.spec, gr1.kolich + " " +  gr1.kurs+'<br/>');
+        gr2=new Gruppa(4 , ' ПОИТ ' , 25);
+        gr2.add_stud(5);
+        gr2.kurs = 2;
+        gr2.sub_stud(8);
+        document.write('<br>' + gr2.n, gr2.spec, gr2.kolich + " " +  gr2.kurs+'<br/>');
+        gr3=new Gruppa(7 , ' ПОИБМС ' , 17);
+        gr3.add_stud(10);
+        gr3.kurs = 3;
+        gr3.sub_stud(2);
+        document.write('<br>' + gr3.n, gr3.spec, gr3.kolich + " " +  gr3.kurs+'<br/>');
+        gr4=new Gruppa(11 , ' ДейВИ ' , 25);
+        gr4.add_stud(9);
+        gr4.kurs = 4;
+        gr4.sub_stud(9);
+        document.write('<br>' + gr4.n, gr4.spec, gr4.kolich + " " +  gr4.kurs+'<br/>');
+        document.write('<br></br>');
+        document.write('spec' in gr1);
+        document.write('<br></br>')
+        document.write('age' in gr4);
+        document.write('<br></br>');
+        document.write(typeof gr1.kurs);
+        document.write('<br></br>');
+        document.write(typeof gr2.n);
+        document.write('<br></br>');
+        document.write(typeof gr3.spec);
+        document.write('<br></br>');
+        document.write(typeof gr4.kolich);
+        document.write('<br></br>');
+        </script>
+    </body>
+</html>

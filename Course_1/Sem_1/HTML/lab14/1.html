@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="style/style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="100 -100 300 300" width="700" height="400">
+        <defs>
+            <path id="MyPath" fill="none" stroke="green" d="M20,170 Q160,160 160,70 Q140,10 100,10 Q20,20 20,100 Q30,170 120,90 170,20 40,80" />
+        </defs>
+        <use xlink:href="#MyPath" />
+
+        <text x="50">
+            <textPath href="#MyPath">
+              Программирование
+            </textPath>
+        </text>
+    </svg>
+</body>
+
+</html>

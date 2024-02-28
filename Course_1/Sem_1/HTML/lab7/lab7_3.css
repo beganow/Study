@@ -1,0 +1,33 @@
+
+.h{
+        animation-name: h;
+        animation-duration: 5s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        text-align: center;
+    }
+@keyframes h{
+        from{
+            opacity: 80%;
+        }
+        to{
+            opacity: 0%;
+        }
+    }
+@keyframes div {
+    from{
+        color: red;
+    }
+    to{
+        color: blue;
+    }
+}
+div{
+    animation-name: div;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+    

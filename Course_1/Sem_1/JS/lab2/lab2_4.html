@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <script type="text/javascript">
+                function fun1(){
+                    let x=+prompt("введите дробное число");
+                    let y=+prompt("введите целое число");
+                    document.write('<table border="1" align="center"><tr><td>Число</td><td>Метод</td><td>Результат</td><td>Описание метода</td></tr>');
+                            document.write("<tr><td>"+x+"</td>");
+                            document.write("<td>toFixed(2)</td>");
+                            document.write("<td>"+x.toFixed(2)+"</td>");
+                            document.write("<td>представляет число в форме с фиксированным количеством цифр после точки, параметр количество – целое число, определяющее, сколько цифр после точки следует указывать.</td></tr>");
+                            document.write("<tr><td>"+x+"</td>");
+                            document.write("<td>toPrecision(3)</td>");
+                            document.write("<td>"+x.toPrecision(3)+"</td>");
+                            document.write("<td>представляет число с заданным общим количеством значащих цифр.</td></tr>")
+                            document.write("<tr><td>"+x+"</td>");
+                            document.write("<td>toExponential(4)</td>")
+                            document.write("<td>"+x.toExponential(4)+"</td>");
+                            document.write("<td>представляет число в экспоненциальной форме, параметр количество – целое число, определяющее, сколько цифр после точки следует указывать.</td></tr>");
+                            document.write("<tr><td>"+x+"</td>");
+                            document.write("<td>toString(16)</td>");
+                            document.write("<td>"+x.toString(16)+"</td>");
+                            document.write("<td> возвращает строковое представление числа в системе счисления с указанным основанием.</td></tr>");
+                            document.write("<tr><td>"+y+"</td>");
+                            document.write("<td>toFixed(2)</td>");
+                            document.write("<td>"+y.toFixed(2)+"</td>");
+                            document.write("<td>представляет число в форме с фиксированным количеством цифр после точки, параметр количество – целое число, определяющее, сколько цифр после точки следует указывать.</td></tr>");
+                            document.write("<tr><td>"+y+"</td>");
+                            document.write("<td>toPrecision(3)</td>");
+                            document.write("<td>"+y.toPrecision(3)+"</td>");
+                            document.write("<td>представляет число с заданным общим количеством значащих цифр.</td></tr>")
+                            document.write("<tr><td>"+y+"</td>");
+                            document.write("<td>toExponential(4)</td>")
+                            document.write("<td>"+y.toExponential(4)+"</td>");
+                            document.write("<td>представляет число в экспоненциальной форме, параметр количество – целое число, определяющее, сколько цифр после точки следует указывать.</td></tr>");
+                            document.write("<tr><td>"+y+"</td>");
+                            document.write("<td>toString(16)</td>");
+                            document.write("<td>"+y.toString(16)+"</td>");
+                            document.write("<td> возвращает строковое представление числа в системе счисления с указанным основанием.</td></tr>");
+                            }
+            </script>
+    </head>
+    <body>
+        <input type="button" value="Представление чисел" onclick="fun1()">
+    </body>
+</html>

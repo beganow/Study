@@ -1,0 +1,45 @@
+ul{
+	display: inline-flex;
+	list-style: none;
+	margin: 0 auto;
+}
+
+li{
+	padding: 10px;
+	border: 1px solid black;
+	background-color: yellow;
+}
+
+.shell{
+	display: block;
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+}
+a{
+	text-decoration: none;
+	color: green;
+}
+.menu{
+	display: none;
+}
+@media screen and (max-width: 560px){
+	.menu{
+		display: block;
+	}
+	a{
+		display: block;
+	}
+	li{
+		width: 100px;
+		display: none;
+	}
+	ul:hover li{
+		display: block;
+	}
+	ul{
+		display: block;
+	}
+
+}

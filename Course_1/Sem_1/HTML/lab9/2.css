@@ -1,0 +1,11 @@
+.div{
+    border: 1px solid black;
+    }
+    ul>li{
+    list-style-type: none;
+    }
+    .menu{
+    justify-content: space-between;
+    display: flex;
+    font-size: 19px;
+    }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type='text/javascript'>
+        const x = "76";
+        const y = "931";
+        let c = (35 * y - 25 * x) / 5 + 232;
+        let m = (8 * y / x + 5 * x / y - 43) * 6;
+        let k = Math.trunc(c / m)
+        let r = c - (k * m);
+        function fun1() {
+            alert(c.toFixed(0));
+        }
+
+        function fun2() {
+            alert(m.toFixed(0));
+        }
+        function fun3() {
+            alert(r.toFixed(0));
+        
+        document.write("Значение первого выражения=", c.toFixed(0));
+        document.write("<br>Значение второго выражения=", m.toFixed(0));
+        document.write("<br>Остаток от деления двух выражений=", r.toFixed(0));
+        }
+    </script>
+</head>
+
+<body>
+    <br><input type='button' value='Значение первого выражения' onclick='fun1()' />
+    <br><input type='button' value='Значение второго выражения' onclick='fun2()' />
+    <br><input type='button' value='Остаток от деления двух выражений' onclick='fun3()' />
+</body>
+
+</html>

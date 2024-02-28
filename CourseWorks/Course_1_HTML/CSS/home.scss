@@ -1,0 +1,495 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  color: black;
+}
+
+.header {
+  background-image: url("../IMG/general.jpg");
+  .wrapper {
+    .main_slider {
+      margin-top: 20px;
+      padding: 50px 0;
+      .container {
+        margin: 0 auto;
+
+        width: 900px;
+        max-width: calc(100% - 30px);
+        position: relative;
+
+        height: 500px;
+        overflow: hidden;
+      }
+      .slides {
+        display: flex;
+        height: 100%;
+      }
+      .slide {
+        width: 100%;
+
+        min-width: 100%;
+        position: relative;
+      }
+      .slide img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .slide-controls {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #next-btn,
+      #prev-btn {
+        cursor: pointer;
+        background: transparent;
+        font-size: 30px;
+        border: none;
+        padding: 10px;
+        color: white;
+      }
+      #next-btn:focus,
+      #prev-btn:focus {
+        outline: none;
+      }
+      .slide-content {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: white;
+      }
+    }
+    .text {
+      margin-top: 90px;
+      max-width: 650px;
+
+      .title {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 49px;
+        color: black;
+      }
+
+      .description {
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        color: rgba(204, 0, 255, 0.596);
+      }
+    }
+    .header_items {
+      .burger {
+        display: none;
+
+        .containers {
+          display: inline-block;
+          cursor: pointer;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+          width: 35px;
+          height: 5px;
+          background-color: black;
+          margin: 6px 0;
+          transition: 0.4s;
+        }
+
+        .change .bar1 {
+          background-color: white;
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+          opacity: 0;
+        }
+
+        .change .bar3 {
+          background-color: white;
+          -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
+        }
+      }
+
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
+        }
+      }
+      .nav {
+        ul {
+          display: flex;
+          gap: 30px;
+          .mobile {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            .phone {
+              width: 30px;
+              height: 30px;
+              margin-top: -4px;
+            }
+            p {
+              font-family: "Playfair Display";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+            }
+            &:hover .hidden_menu {
+              display: block;
+              width: 200px;
+
+              .blocks {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                ul {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  color: white;
+                }
+                .icons {
+                  margin-left: auto;
+                  display: flex;
+                  gap: 10px;
+                  img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                  }
+                }
+              }
+              height: 150px;
+              border-radius: 10px;
+              padding: 10px 10px;
+              backdrop-filter: blur(5px);
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+            .hidden_menu {
+              transform: translateY(5px);
+              position: absolute;
+              top: 100%;
+              display: none;
+            }
+          }
+          li {
+            a {
+              font-family: "Playfair Display";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              &.active {
+                border-bottom: 1px solid black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+  background: #dcc15f;
+  padding: 40px 0;
+
+  .wrapper {
+    .opportunites {
+      display: flex;
+
+      align-items: center;
+      gap: 10px;
+
+      .oppor {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .text {
+          display: flex;
+          flex-direction: column;
+
+          min-height: 100px;
+          gap: 10px;
+
+          p {
+            max-width: 190px;
+          }
+        }
+
+        .block {
+          width: 140px;
+          height: 140px;
+          background: green;
+          border-radius: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &.two {
+            background: rgba(255, 245, 5, 0.45);
+          }
+
+          &.tree {
+            background: rgba(255, 0, 0, 0.45);
+          }
+        }
+      }
+    }
+
+    .title_main {
+      font-family: "Playfair Display";
+      font-style: normal;
+      max-width: 400px;
+      font-weight: 700;
+      font-size: 45px;
+      color: #070707;
+      padding: 20px 0;
+    }
+
+    .opportunites {
+      margin: 40px 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header .wrapper .header_items .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: 0.6s;
+
+    &.active {
+      transform: translateX(0);
+    }
+
+    ul {
+      .mobile {
+        display: none;
+      }
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      .active {
+        background-color: #ff4d00;
+        color: white;
+      }
+      li {
+        text-align: center;
+        width: 90%;
+        color: black;
+
+        a {
+          background-color: white;
+          width: 100%;
+          display: block;
+          padding: 10px;
+
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .header .wrapper .header_items .burger {
+    display: block;
+    z-index: 100;
+  }
+
+  .main .wrapper .opportunites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .main .wrapper .title_main {
+    text-align: center;
+    max-width: 100%;
+    font-size: 35px;
+  }
+
+  .header .wrapper .text .title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #fa11ff;
+    text-align: center;
+  }
+
+  .header .wrapper .text {
+    margin-top: 80px;
+    max-width: 100%;
+  }
+
+  .header .wrapper .text .description {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #ff4d00;
+  }
+
+  .main .wrapper .opportunites .oppor .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .main {
+    background: #dcc15f;
+    padding: 40px 0;
+
+    .wrapper {
+      .opportunites {
+        display: flex;
+
+        align-items: center;
+        gap: 10px;
+
+        .oppor {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            p {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header .main_slider {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .header .main_slider .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    .container {
+      padding: 0;
+      height: 200px;
+      margin: 0 auto;
+      max-width: 270px;
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+  }
+
+  .wrapper {
+    max-width: 430px;
+  }
+
+  .header .slider .slider_osnova {
+    margin: 0 auto;
+  }
+  .header .slider .slider_osnova .slide {
+    flex-shrink: 0;
+    position: relative;
+    max-width: 300px;
+    left: 0%;
+    transition: 0.4s;
+    height: 300px;
+
+    z-index: 1;
+  }
+
+  .main .wrapper .opportunites .oppor .block {
+    width: 100px;
+    height: 100px;
+    background: green;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .main .wrapper .opportunites .oppor .text {
+    h1 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}

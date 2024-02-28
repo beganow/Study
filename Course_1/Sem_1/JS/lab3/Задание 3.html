@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 3</title>
+	<script>
+		var str = new String("Ободов Павел Андреевич");
+		document.write(str + "<br />");
+		document.write("Длина строки = " + str.length + "<br />");
+		var strV = str.toUpperCase();
+		var strN = str.toLowerCase();
+		document.write("Все символы в верхнем регистре: " + strV + "<br />");
+		document.write("все символы в нижнем регистре: " + strN + "<br />");
+		document.write("Соединенные строки: " + strV.concat(strN) + '<br />');
+		document.write('Замена: ' + str.replace('Ободов Павел Андреевич' ,'О.П.А'));
+	</script>
+</head>
+<body>
+</body>
+</html>

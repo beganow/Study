@@ -1,0 +1,6 @@
+﻿  lab7_6.cpp
+D:\Лаба Белодед\lab7_6\lab7_6\lab7_6.cpp(8,34): warning C4305: инициализация: усечение из "double" в "float"
+D:\Лаба Белодед\lab7_6\lab7_6\lab7_6.cpp(13,11): warning C4305: =: усечение из "double" в "float"
+D:\Лаба Белодед\lab7_6\lab7_6\lab7_6.cpp(16,28): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\Лаба Белодед\lab7_6\lab7_6\lab7_6.cpp(24,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  lab7_6.vcxproj -> D:\Лаба Белодед\lab7_6\Debug\lab7_6.exe
