@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мультиварка</title>
+    <link rel="stylesheet" href="./css/map.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="header">
+            <nav>
+                <div class="burger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu">
+                    <li class="menu-item"><a href="./index.html">Главная</a></li>
+                    <li class="menu-item">
+                        <a href="#">Структура</a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="./elements.html">Теория</a></li>
+                            <li class="submenu-item"><a href="./map.html">Карта мультиварки</a></li>
+                            <li class="submenu-item"><a href="./video.html">Анимационный ролик</a></li>
+                            <li class="submenu-item"><a href="http://localhost:8000/simulator.html">Симулятор мультиварки</a></li>
+                            <li class="submenu-item"><a href="./baza.html">База знаний</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="./about.html">Обо мне</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <center>
+                <h1>Карта Мультиварки</h1>
+            </center>
+            <img class="multimap" src="./img/multimap.jpg" usemap="#image-map">
+            <map name="image-map">
+                <area shape="rect" coords="530,770,595,795" alt="Sound 1" onclick="playSound('1.mp3')" />
+                <area shape="rect" coords="548,720,588,750" alt="Sound 2" onclick="playSound('2.mp3')" />
+                <area shape="rect" coords="500,718,542,750" alt="Sound 2" onclick="playSound('3.mp3')" />
+                <area shape="rect" coords="454,724,500,758" alt="Sound 2" onclick="playSound('4.mp3')" />
+                <area shape="rect" coords="240,292,734,476" alt="Sound 2" onclick="playSound('5.mp3')" />
+                <area shape="rect" coords="624,698,672,718" alt="Sound 2" onclick="playSound('6.mp3')" />
+                <area shape="rect" coords="688,0,894,352" alt="Sound 2" onclick="playSound('7.mp3')" />
+                <area shape="rect" coords="468,642,656,674" alt="Sound 2" onclick="playSound('8.mp3')" />
+                <area shape="rect" coords="320,926,706,904" alt="Sound 2" onclick="playSound('9.mp3')" />
+                <!-- Добавьте другие области, если необходимо -->
+            </map>
+        </div>
+    </main>
+    <script src="js/main2.js"></script>
+</body>
+
+</html>

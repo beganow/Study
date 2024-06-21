@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>My Unity WebGL Game</title>
+    <script src="UnityLoader.js"></script>
+    <style>
+        html,
+        body,
+        #gameContainer {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Course_3_Unity.json");
+    </script>
+</head>
+
+<body>
+    <div id="gameContainer"></div>
+</body>
+
+</html>
