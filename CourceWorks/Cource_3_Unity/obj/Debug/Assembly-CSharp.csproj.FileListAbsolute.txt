@@ -1,0 +1,2 @@
+D:\Course_1\Course_3\Course_2\Sem_2\KMS\Labs\lab10\New Unity Project\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+D:\Course_1\Course_3\Course_2\Sem_2\KMS\Labs\lab10\New Unity Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
