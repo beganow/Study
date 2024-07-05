@@ -1,0 +1,32 @@
+﻿#include <Windows.h>
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    clock_t start = clock();
+    int k = 0;
+    bool flag5 = true, flag10 = true;
+
+    while (true)
+    {
+        k++;
+        if ((clock() - start) / CLOCKS_PER_SEC == 5 && flag5) {
+            cout << "Значение счетчика через 5 секунд: " << k << '\n';
+            flag5 = false;
+        }
+        if ((clock() - start) / CLOCKS_PER_SEC == 10 && flag10) {
+            cout << "Значение счетчика через 10 секунд: " << k << '\n';
+            flag10 = false;
+        }
+        if ((clock() - start) / CLOCKS_PER_SEC == 15) {
+            cout << "Итоговое значение счетчика: " << k << '\n';
+            break;
+        }
+    }
+
+    return 0;
+}
