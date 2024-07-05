@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>XmlHttpRequest</title>
+</head>
+
+<body>
+    <h1>Student Info:</h1>
+    <span id="name"></span>
+</body>
+
+<script>
+    function getName() {
+        let xml = new XMLHttpRequest()
+        xml.open("GET", 'http://localhost:5000/api/name')
+        xml.send()
+        xml.onload = () => {
+            document.querySelector('#name').innerHTML = xml.response;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        getName();
+    });
+</script>
+
+</html>

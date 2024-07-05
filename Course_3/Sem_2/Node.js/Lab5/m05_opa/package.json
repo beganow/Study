@@ -1,0 +1,17 @@
+{
+  "name": "m05_opa",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "m06_OPA.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "m05_kav": "^1.0.0",
+    "m05_opa": "^1.0.1",
+    "nodemailer": "^6.9.8"
+  }
+}

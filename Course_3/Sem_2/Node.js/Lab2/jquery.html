@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <h1>Student Info:</h1>
+    <span id="name"></span>
+</body>
+
+<script>
+    function getName() {
+        $.ajax({
+            url: 'http://localhost:5000/api/name',
+            method: 'GET',
+            success: function (data) {
+                $('#name').html(data);
+            },
+            error: function (error) {
+                console.log('Произошла ошибка:', error);
+            }
+        });
+    }
+
+    $(document).ready(function () {
+        getName();
+    });
+</script>
+
+</html>
