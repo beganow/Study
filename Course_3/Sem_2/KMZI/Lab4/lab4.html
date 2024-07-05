@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: greenyellow;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 20px auto;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #binaryOutput {
+            margin-top: 20px;
+            padding: 10px;
+            font-family: monospace;
+            white-space: pre;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        #binaryOutput1 {
+            margin-top: 20px;
+            padding: 10px;
+            font-family: monospace;
+            white-space: pre;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Задание 1</h1>
+    <input type="file" id="fileInput" />
+    <button id="convertButton">Преобразовать в двоичный вид</button>
+    <div id="binaryOutput"></div>
+    <div id="binaryOutpute"></div>
+    <h1>Задание 2</h1>
+    <button id="Matrix">Вывести матрицу</button>
+    <div id="binaryOutput1"></div>
+    <h1>Задание 3</h1>
+    <button id="izbitok">Посчитать Избыточные символы</button>
+    <div id="redundantBitsOutput"></div>
+    <div id="redundantBitsOutput1"></div>
+    <h1>Задание 4-6</h1>
+    <input type="number" id="numErrors" min="0" max="2">
+    <button id="generateError">Generate Error</button>
+    <div id="errorOutput"></div>
+    <div id="errorOutput1"></div>
+    <button id="recalculate">Повторно считаем избыточные символы</button>
+    <div id="redundantBitsOutput2"></div>
+    <button id="correctError">Поиск синдрома</button>
+    <div id="syndromeOutput"></div>
+    <div id="correctedOutput"></div>
+    <div id="correctedOutput1"></div>
+    <div id="errorVectorOutput"></div>
+    <script src="lab4.js"></script>
+</body>
+
+</html>

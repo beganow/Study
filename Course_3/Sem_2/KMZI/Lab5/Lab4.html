@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Generation</title>
+</head>
+
+<body>
+    <div id="output"></div>
+
+    <script>
+        function generateMatrix(height, width) {
+            var output = document.getElementById("output");
+            var res = new Array(40);
+            var res1 = new Array(40);
+
+            var message = new Array(height);
+            for (var i = 0; i < height; i++) {
+                message[i] = new Array(width);
+            }
+            var sc = new Array(width);
+
+            var eachRow, i, j;
+            var gorParity = new Array(height);
+            var verParity = new Array(width);
+            var result = 0;
+            for (i = 0; i < width; i++) sc[i] = 0;
+
+            for (i = 0; i < height; i++) {
+                eachRow = 0;
+                for (j = 0; j < width; j++) {
+                    message[i][j] = Math.floor(Math.random() * 2);
+                    output.innerHTML += message[i][j] + "  ";
+                    eachRow += message[i][j];
+                    result += message[i][j];
+                    gorParity[i] = eachRow;
+                    sc[j] += message[i][j];
+                }
+                var l = eachRow % 2;
+                output.innerHTML += " |" + l + "<br>";
+            }
+
+            for (i = 0; i < width; i++) output.innerHTML += "___";
+            output.innerHTML += "<br>";
+
+            for (i = 0; i < width; i++) {
+                var z = sc[i] % 2;
+                verParity[i] = z;
+                output.innerHTML += z + "  ";
+            }
+
+            output.innerHTML += "<br>";
+
+            var itogreg = 0;
+            var itogregd = 0;
+            output.innerHTML += "Xn=  ";
+            for (i = 0; i < width; i++) sc[i] = 0;
+
+            for (i = 0; i < height; i++) {
+                for (j = 0; j < width; j++) {
+                    output.innerHTML += message[i][j];
+                    res[itogreg++] = message[i][j];
+                    res1[itogregd++] = message[i][j];
+                }
+            }
+
+            var o = 0;
+            var savegor = new Array(5);
+            gorParity.forEach(function (item) {
+                var l = item % 2;
+                savegor[o++] = l;
+                output.innerHTML += l;
+            });
+
+            var f = 0;
+            var savever = new Array(8);
+
+            verParity.reverse();
+            verParity.forEach(function (item) {
+                savever[f++] = item;
+                output.innerHTML += item;
+            });
+
+            var ress = result % 2;
+            output.innerHTML += ress;
+
+            res.forEach(function (item) {
+                output.innerHTML += item;
+            });
+
+            try {
+                output.innerHTML += "<br>";
+                var error = Math.floor(Math.random() * res.length);
+                output.innerHTML += "Бит с ошибкой:  " + error + "<br>";
+                if (res[error] == 1) res[error] = 0;
+                else res[error] = 1;
+            } catch {
+                output.innerHTML += "Error<br>";
+            }
+
+            output.innerHTML += "Yn=  ";
+            res.forEach(function (item) {
+                output.innerHTML += item;
+            });
+
+            output.innerHTML += "<br>";
+            var iter = 0;
+            for (i = 0; i < width; i++) sc[i] = 0;
+
+            for (i = 0; i < height; i++) {
+                eachRow = 0;
+                for (j = 0; j < width; j++) {
+                    message[i][j] = res[iter++];
+                    output.innerHTML += message[i][j] + "  ";
+                    eachRow += message[i][j];
+                    sc[j] += message[i][j];
+                    gorParity[i] = eachRow;
+                }
+                var l = eachRow % 2;
+                output.innerHTML += " |" + l + "<br>";
+            }
+
+            for (i = 0; i < width; i++) output.innerHTML += "___";
+            output.innerHTML += "<br>";
+
+            for (i = 0; i < width; i++) {
+                var z = sc[i] % 2;
+                verParity[i] = z;
+                output.innerHTML += z + "  ";
+            }
+
+            output.innerHTML += "<br>";
+
+            output.innerHTML += "Сравнение паритетов:<br>";
+            output.innerHTML += "  ";
+            gorParity.forEach(function (item) {
+                var l = item % 2;
+                output.innerHTML += l;
+            });
+
+            output.innerHTML += "  ";
+            verParity.forEach(function (item) {
+                output.innerHTML += item;
+            });
+            output.innerHTML += "<br>  ";
+            savegor.forEach(function (it) {
+                output.innerHTML += it;
+            });
+            output.innerHTML += "  ";
+            savever.forEach(function (it) {
+                output.innerHTML += it;
+            });
+            output.innerHTML += "<br>Без ошибок:<br>";
+
+            res1.forEach(function (item) {
+                output.innerHTML += item;
+            });
+        }
+        function generate2Matrix(height, width) {
+            var output = document.getElementById("output");
+            var res = new Array(40);
+            var res1 = new Array(40);
+
+            var a = new Array(height);
+            for (var i = 0; i < height; i++) {
+                a[i] = new Array(width);
+            }
+            var sc = new Array(width);
+            var vert = new Array(width);
+            var s, i, j;
+            var result = 0;
+            for (i = 0; i < width; i++) sc[i] = 0;
+
+            for (i = 0; i < height; i++) {
+                s = 0;
+                for (j = 0; j < width; j++) {
+                    a[i][j] = Math.floor(Math.random() * 2);
+                    output.innerHTML += a[i][j] + "  ";
+                    s += a[i][j];
+                    result += a[i][j];
+                    sc[j] += a[i][j];
+                }
+                var l = s % 2;
+                output.innerHTML += " |" + l + "<br>";
+            }
+
+            for (i = 0; i < width; i++) output.innerHTML += "___";
+            output.innerHTML += "<br>";
+            for (i = 0; i < width; i++) {
+                var z = sc[i] % 2;
+                vert[i] = z;
+                output.innerHTML += z + "  ";
+            }
+            output.innerHTML += "<br>";
+
+            var itog = 0;
+            var itog1 = 0;
+            output.innerHTML += "Xn=  ";
+            for (i = 0; i < width; i++) sc[i] = 0;
+
+            for (i = 0; i < height; i++) {
+                for (j = 0; j < width; j++) {
+                    output.innerHTML += a[i][j];
+                    res[itog++] = a[i][j];
+                    res1[itog1++] = a[i][j];
+                }
+            }
+
+            try {
+                output.innerHTML += "<br>";
+                var random = Math.floor(Math.random() * res.length);
+                output.innerHTML += "Бит ошибки:  " + random + "<br>";
+                if (res[random] == 1) res[random] = 0;
+                else res[random] = 1;
+            } catch {
+                output.innerHTML += "Error<br>";
+            }
+
+            output.innerHTML += "Yn=  ";
+            res.forEach(function (item) {
+                output.innerHTML += item;
+            });
+            output.innerHTML += "<br>";
+
+            var iter = 0;
+            for (i = 0; i < width; i++) sc[i] = 0;
+
+            for (i = 0; i < height; i++) {
+                s = 0;
+                for (j = 0; j < width; j++) {
+                    a[i][j] = res[iter++];
+                    output.innerHTML += a[i][j] + "  ";
+                    s += a[i][j];
+                    sc[j] += a[i][j];
+                }
+                var l = s % 2;
+                output.innerHTML += " |" + l + "<br>";
+            }
+
+            for (i = 0; i < width; i++) output.innerHTML += "___";
+            output.innerHTML += "<br>";
+
+            for (i = 0; i < width; i++) {
+                var z = sc[i] % 2;
+                vert[i] = z;
+                output.innerHTML += z + "  ";
+            }
+            output.innerHTML += "<br>";
+
+            output.innerHTML += "Xn=  ";
+            res1.forEach(function (item) {
+                output.innerHTML += item;
+            });
+        }
+        function iterative3Matrix(height, width, depth) {
+            var output = document.getElementById("output");
+            var result = new Array(40);
+            var sc = new Array(depth);
+            var it = 0;
+
+            var array = new Array(height);
+            for (var i = 0; i < height; i++) {
+                array[i] = new Array(width);
+                for (var j = 0; j < width; j++) {
+                    array[i][j] = new Array(depth);
+                }
+            }
+
+            for (var i = 0; i < depth; i++) sc[i] = 0;
+
+            for (var i = 0; i < height; i++) {
+                for (var j = 0; j < width; j++) {
+                    var sl = 0;
+                    output.innerHTML += "<br>";
+                    for (var k = 0; k < depth; k++) {
+                        array[i][j][k] = Math.floor(Math.random() * 2);
+                        sl += array[i][j][k];
+                        if (!result[it]) result[it] = 0;
+                        result[it] += array[i][j][k];
+                        output.innerHTML += array[i][j][k];
+                        sc[k] += array[i][j][k];
+                    }
+                    var l = sl % 2;
+                    output.innerHTML += " |" + l + "<br>";
+                    it++;
+                }
+                output.innerHTML += "___<br>";
+                for (var d = 0; d < depth; d++) {
+                    var z = sc[d] % 2;
+                    output.innerHTML += z + "";
+                    sc[d] = 0;
+                }
+                output.innerHTML += "<br><br>";
+            }
+
+            output.innerHTML += "Паритет 4-5 групп:<br>";
+
+            for (var i = 0; i < height; i++) {
+                for (var j = 0; j < width; j++) {
+                    for (var k = 0; k < depth; k++) {
+                        output.innerHTML += array[i][j][k];
+                    }
+                }
+                output.innerHTML += "<br>";
+            }
+
+            var sresult = new Array(40);
+            output.innerHTML += "Xn =  ";
+            var inh = 0;
+            result.forEach(function (item) {
+                sresult[inh++] = item % 2; 
+                output.innerHTML += item % 2;
+            });
+
+            try {
+                output.innerHTML += "<br>";
+                var error = Math.floor(Math.random() * result.length);
+                output.innerHTML += "Ошибка:  " + error + "<br>";
+                if (result[error] == 1) result[error] = 0;
+                else result[error] = 1;
+            } catch {
+                output.innerHTML += "Error<br>";
+            }
+
+            output.innerHTML += "Yn =  ";
+            sresult.forEach(function (item) { 
+                output.innerHTML += item;
+            });
+        }
+
+        generateMatrix(5, 8);
+        generate2Matrix(4, 10);
+
+        iterative3Matrix(5, 4, 2);
+        iterative3Matrix(2, 10, 2);
+    </script>
+</body>
+
+</html>
